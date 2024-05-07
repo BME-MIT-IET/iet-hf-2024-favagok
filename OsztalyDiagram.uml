@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Balint/OneDrive - Budapesti Műszaki és Gazdaságtudományi Egyetem/Szarok/Tanulás/BME/4. Félév/Szoft proj lab/Szkeleton/sivatagi_vizhalozat/src</OriginalElement>
+  <nodes>
+    <node x="5734.775547882153" y="6289.0">main.Controller</node>
+    <node x="2243.1433080110887" y="1181.0">main.NomadPipeOutWindow</node>
+    <node x="1954.1433080110887" y="1181.0">main.PlumberPipeInWindow</node>
+    <node x="787.9249608655398" y="4615.0">things.Pipe</node>
+    <node x="2462.92496086554" y="851.0">main.PlumberPipeInteraction</node>
+    <node x="1304.893308011089" y="1181.0">main.PlumberPipeOutWindow</node>
+    <node x="1666.1433080110887" y="1181.0">main.NomadPipeInWindow</node>
+    <node x="4196.205808011089" y="-801.0">main.LoadSave</node>
+    <node x="5529.354166666666" y="1575.0">main.GamePanel</node>
+    <node x="-115.50252532224431" y="2737.0">things.State</node>
+    <node x="697.1297145488202" y="851.0">main.NomadPipeInteraction</node>
+    <node x="3569.17496086554" y="397.0">entities.Plumber</node>
+    <node x="4165.018308011089" y="2001.0">states.InGame</node>
+    <node x="4044.42496086554" y="421.5">entities.Nomad</node>
+    <node x="1272.6224746777555" y="-788.5">main.Round</node>
+    <node x="3192.9558080110887" y="1181.0">main.PlumberPickUpWindow</node>
+    <node x="2532.1433080110887" y="1181.0">main.PlumberMoveWindow</node>
+    <node x="4471.174960865539" y="2255.0">main.Game</node>
+    <node x="812.6875" y="2749.0">main.Main</node>
+    <node x="1016.893308011089" y="1181.0">main.NomadMoveWindow</node>
+    <node x="5816.354166666666" y="1588.0">main.settings</node>
+    <node x="5287.354166666666" y="1527.5">main.restart_menu</node>
+    <node x="373.8099746777557" y="1503.0">things.Spring</node>
+    <node x="164.8099746777557" y="1527.5">things.Cistern</node>
+    <node x="4574.770833333334" y="1976.5">main.GameWindow</node>
+    <node x="5095.770833333334" y="1953.0">main.startMenu</node>
+    <node x="2875.9558080110887" y="1588.0">main.NomadButtonPanel</node>
+    <node x="-240.625" y="3827.0">things.Field</node>
+    <node x="1594.875" y="2933.0">things.Pump</node>
+    <node x="5184.604166666666" y="1181.0">main.ImagePanel</node>
+    <node x="3863.17496086554" y="1588.0">main.PlumberButtonPanel</node>
+    <node x="3326.0808080110887" y="-651.0">entities.Player</node>
+    <node x="4425.770833333334" y="1600.0">things.Cactus</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.NomadPipeInteraction" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="68.0" />
+      <point x="764.1297145488202" y="1159.0" />
+      <point x="-338.0" y="1159.0" />
+      <point x="-338.0" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.settings" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="70.0" y="-68.0" />
+      <point x="5991.354166666666" y="1481.0" />
+      <point x="5931.354166666666" y="1481.0" />
+      <point x="5931.354166666666" y="-682.0" />
+      <point x="4371.705808011089" y="-682.0" />
+      <point x="58.5" y="44.0" />
+    </edge>
+    <edge source="main.PlumberPipeInteraction" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="68.0" />
+      <point x="2529.92496086554" y="1009.0" />
+      <point x="964.393308011089" y="1009.0" />
+      <point x="964.393308011089" y="1139.0" />
+      <point x="811.9249608655398" y="1139.0" />
+      <point x="811.9249608655398" y="1381.0" />
+      <point x="701.4375" y="1381.0" />
+      <point x="701.4375" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="main.Controller" target="things.Field" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-316.5" y="6248.0" />
+      <point x="-316.5" y="4573.0" />
+      <point x="-175.375" y="4573.0" />
+      <point x="-65.25" y="357.0" />
+    </edge>
+    <edge source="main.NomadPipeOutWindow" target="entities.Player" relationship="DEPENDENCY">
+      <point x="0.0" y="-44.0" />
+      <point x="2377.1433080110887" y="1079.0" />
+      <point x="3045.92496086554" y="1079.0" />
+      <point x="3045.92496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="things.Pump" target="things.Cistern" relationship="DEPENDENCY">
+      <point x="-33.625" y="-405.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="520.9375" y="2871.0" />
+      <point x="520.9375" y="1931.0" />
+      <point x="-251.125" y="1931.0" />
+      <point x="-251.125" y="1891.0" />
+      <point x="235.6849746777557" y="1891.0" />
+      <point x="-23.625" y="128.5" />
+    </edge>
+    <edge source="main.GamePanel" target="main.Game" relationship="TO_ONE">
+      <point x="92.625" y="81.0" />
+      <point x="5745.479166666666" y="1901.0" />
+      <point x="5780.893308011089" y="1901.0" />
+      <point x="5780.893308011089" y="2193.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="things.Pipe" target="things.Pipe" relationship="CREATE">
+      <point x="-93.5" y="801.0" />
+      <point x="881.4249608655398" y="6237.0" />
+      <point x="767.9249608655398" y="6237.0" />
+      <point x="767.9249608655398" y="5416.0" />
+      <point x="-187.0" y="-0.0" />
+    </edge>
+    <edge source="main.Game" target="main.GamePanel" relationship="TO_ONE">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="5780.893308011089" y="2193.0" />
+      <point x="5780.893308011089" y="1901.0" />
+      <point x="5745.479166666666" y="1901.0" />
+      <point x="92.625" y="81.0" />
+    </edge>
+    <edge source="main.GamePanel" target="main.Controller" relationship="DEPENDENCY">
+      <point x="30.875" y="81.0" />
+      <point x="5683.729166666666" y="1921.0" />
+      <point x="6089.854166666666" y="1921.0" />
+      <point x="6089.854166666666" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberPipeOutWindow" target="things.Field" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1371.893308011089" y="1351.0" />
+      <point x="615.5599746777557" y="1351.0" />
+      <point x="615.5599746777557" y="1481.0" />
+      <point x="-126.00252532224431" y="1481.0" />
+      <point x="-126.00252532224431" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="things.Cistern" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-23.625" y="128.5" />
+      <point x="235.6849746777557" y="1891.0" />
+      <point x="-251.125" y="1891.0" />
+      <point x="-251.125" y="1931.0" />
+      <point x="-327.0" y="1931.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberPickUpWindow" target="entities.Player" relationship="DEPENDENCY">
+      <point x="0.0" y="-44.0" />
+      <point x="3326.9558080110887" y="1149.0" />
+      <point x="3630.79996086554" y="1149.0" />
+      <point x="3630.79996086554" y="1129.0" />
+      <point x="3538.67496086554" y="1129.0" />
+      <point x="3538.67496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="main.NomadMoveWindow" target="entities.Player" relationship="DEPENDENCY">
+      <point x="67.0" y="-44.0" />
+      <point x="1217.893308011089" y="1019.0" />
+      <point x="2199.7974355432953" y="1019.0" />
+      <point x="2199.7974355432953" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="main.NomadPipeInWindow" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1733.1433080110887" y="1311.0" />
+      <point x="822.4249608655398" y="1311.0" />
+      <point x="822.4249608655398" y="1431.0" />
+      <point x="706.6875" y="1431.0" />
+      <point x="706.6875" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="main.startMenu" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="0.0" y="-104.0" />
+      <point x="5198.270833333334" y="1881.0" />
+      <point x="5174.104166666666" y="1881.0" />
+      <point x="5174.104166666666" y="-682.0" />
+      <point x="4371.705808011089" y="-682.0" />
+      <point x="58.5" y="44.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="main.Main" relationship="DEPENDENCY">
+      <point x="-89.33333333333303" y="68.0" />
+      <point x="3907.841627532207" y="1871.0" />
+      <point x="808.6099355432955" y="1871.0" />
+      <point x="808.6099355432955" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.NomadPipeOutWindow" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2310.1433080110887" y="1301.0" />
+      <point x="832.4249608655398" y="1301.0" />
+      <point x="832.4249608655398" y="1441.0" />
+      <point x="772.4766413444224" y="1441.0" />
+      <point x="772.4766413444224" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.Game" target="things.Cactus" relationship="TO_MANY">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="5311.270833333334" y="2193.0" />
+      <point x="5311.270833333334" y="1851.0" />
+      <point x="4587.645833333334" y="1851.0" />
+      <point x="69.375" y="56.0" />
+    </edge>
+    <edge source="main.NomadPipeInteraction" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="68.0" />
+      <point x="764.1297145488202" y="1159.0" />
+      <point x="721.2974355432955" y="1159.0" />
+      <point x="721.2974355432955" y="1371.0" />
+      <point x="626.3099746777557" y="1371.0" />
+      <point x="626.3099746777557" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="main.PlumberPipeInteraction" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="68.0" />
+      <point x="2529.92496086554" y="1009.0" />
+      <point x="964.393308011089" y="1009.0" />
+      <point x="964.393308011089" y="1139.0" />
+      <point x="-338.0" y="1139.0" />
+      <point x="-338.0" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="states.InGame" target="things.Cistern" relationship="CREATE">
+      <point x="-43.5" y="-56.0" />
+      <point x="4208.518308011089" y="1931.0" />
+      <point x="4136.67496086554" y="1931.0" />
+      <point x="4136.67496086554" y="1891.0" />
+      <point x="330.1849746777559" y="1891.0" />
+      <point x="70.875" y="128.5" />
+    </edge>
+    <edge source="main.NomadMoveWindow" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1083.893308011089" y="1321.0" />
+      <point x="801.4249608655398" y="1321.0" />
+      <point x="801.4249608655398" y="1461.0" />
+      <point x="772.4766413444224" y="1461.0" />
+      <point x="772.4766413444224" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.Game" target="things.Cactus" relationship="CREATE">
+      <point x="0.0" y="-189.0" />
+      <point x="4593.174960865539" y="2233.0" />
+      <point x="4577.004714548821" y="2233.0" />
+      <point x="4577.004714548821" y="2203.0" />
+      <point x="4523.270833333334" y="2203.0" />
+      <point x="4523.270833333334" y="1881.0" />
+      <point x="4541.395833333334" y="1881.0" />
+      <point x="23.125" y="56.0" />
+    </edge>
+    <edge source="things.Pipe" target="main.Game" relationship="DEPENDENCY">
+      <point x="-140.25" y="-801.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="213.6224746777557" y="4563.0" />
+      <point x="213.6224746777557" y="2705.0" />
+      <point x="1538.4874608655398" y="2705.0" />
+      <point x="1538.4874608655398" y="2665.0" />
+      <point x="4562.674960865539" y="2665.0" />
+      <point x="-30.5" y="189.0" />
+    </edge>
+    <edge source="main.PlumberPickUpWindow" target="main.Game" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="3259.955808011089" y="1291.0" />
+      <point x="843.4249608655398" y="1291.0" />
+      <point x="843.4249608655396" y="1421.0" />
+      <point x="3154.4558080110887" y="1421.0" />
+      <point x="3154.4558080110887" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="things.Spring" target="things.Pipe" relationship="DEPENDENCY">
+      <point x="-66.0" y="153.0" />
+      <point x="406.8099746777557" y="1901.0" />
+      <point x="213.6224746777557" y="1901.0" />
+      <point x="213.6224746777557" y="4563.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="-140.25" y="-801.0" />
+    </edge>
+    <edge source="main.NomadPipeInWindow" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1733.1433080110887" y="1311.0" />
+      <point x="822.4249608655398" y="1311.0" />
+      <point x="822.4249608655398" y="1431.0" />
+      <point x="-327.0" y="1431.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="states.InGame" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="43.5" y="-56.0" />
+      <point x="4295.518308011089" y="1931.0" />
+      <point x="4395.270833333334" y="1931.0" />
+      <point x="4395.270833333334" y="-682.0" />
+      <point x="4371.705808011089" y="-682.0" />
+      <point x="58.5" y="44.0" />
+    </edge>
+    <edge source="things.Cistern" target="things.Pump" relationship="GENERALIZATION">
+      <point x="23.625" y="128.5" />
+      <point x="282.9349746777557" y="2871.0" />
+      <point x="398.0474355432955" y="2871.0" />
+      <point x="398.0474355432955" y="2911.0" />
+      <point x="1628.5" y="2911.0" />
+      <point x="-100.875" y="-405.0" />
+    </edge>
+    <edge source="main.Controller" target="main.Main" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="6069.354166666666" y="6248.0" />
+      <point x="6069.354166666666" y="2881.0" />
+      <point x="894.6875000000005" y="2881.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="main.Game" target="main.Game" relationship="DEPENDENCY">
+      <point x="-91.5" y="189.0" />
+      <point x="4501.674960865539" y="2653.0" />
+      <point x="4451.174960865539" y="2653.0" />
+      <point x="4451.174960865539" y="2444.0" />
+      <point x="-122.0" y="-0.0" />
+    </edge>
+    <edge source="main.settings" target="main.ImagePanel" relationship="CREATE">
+      <point x="-70.0" y="-68.0" />
+      <point x="5851.354166666666" y="1481.0" />
+      <point x="5246.354166666666" y="1481.0" />
+      <point x="-61.75" y="44.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="entities.Plumber" relationship="DEPENDENCY">
+      <point x="67.0" y="-68.0" />
+      <point x="4064.17496086554" y="1481.0" />
+      <point x="4002.42496086554" y="1481.0" />
+      <point x="4002.42496086554" y="809.0" />
+      <point x="3695.17496086554" y="809.0" />
+      <point x="3695.17496086554" y="769.0" />
+      <point x="3667.42496086554" y="769.0" />
+      <point x="-32.75" y="165.0" />
+    </edge>
+    <edge source="main.Game" target="main.GameWindow" relationship="CREATE">
+      <point x="0.0" y="-189.0" />
+      <point x="4593.174960865539" y="2233.0" />
+      <point x="4577.004714548821" y="2233.0" />
+      <point x="4577.004714548821" y="2203.0" />
+      <point x="4654.9375" y="2203.0" />
+      <point x="-160.33333333333326" y="80.5" />
+    </edge>
+    <edge source="entities.Player" target="main.Game" relationship="TO_ONE">
+      <point x="93.375" y="477.0" />
+      <point x="3543.9558080110887" y="335.0" />
+      <point x="3551.333333333333" y="335.0" />
+      <point x="3551.3333333333335" y="365.0" />
+      <point x="6047.354166666666" y="365.0" />
+      <point x="6047.354166666666" y="2193.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="things.Pump" target="things.Field" relationship="GENERALIZATION">
+      <point x="-53.80000000000018" y="405.0" />
+      <point x="1675.5749999999998" y="3785.0" />
+      <point x="-12.25" y="3785.0" />
+      <point x="97.875" y="-357.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="main.PlumberPipeInteraction" relationship="DEPENDENCY">
+      <point x="67.0" y="-68.0" />
+      <point x="4064.17496086554" y="1481.0" />
+      <point x="4002.42496086554" y="1481.0" />
+      <point x="4002.42496086554" y="1139.0" />
+      <point x="964.393308011089" y="1139.0" />
+      <point x="964.393308011089" y="1009.0" />
+      <point x="2529.92496086554" y="1009.0" />
+      <point x="-67.0" y="68.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="main.Game" relationship="DEPENDENCY">
+      <point x="-89.33333333333303" y="68.0" />
+      <point x="3907.841627532207" y="1871.0" />
+      <point x="808.6099355432955" y="1871.0" />
+      <point x="808.6099355432955" y="1911.0" />
+      <point x="1966.4558080110887" y="1911.0" />
+      <point x="1966.4558080110887" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="things.Cactus" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="0.0" y="-56.0" />
+      <point x="4518.270833333334" y="-682.0" />
+      <point x="4371.705808011089" y="-682.0" />
+      <point x="58.5" y="44.0" />
+    </edge>
+    <edge source="entities.Player" target="main.Round" relationship="REALIZATION">
+      <point x="-62.25" y="-477.0" />
+      <point x="3388.3308080110887" y="-672.0" />
+      <point x="1329.6224746777555" y="-672.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="main.NomadButtonPanel" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-89.33333333333326" y="68.0" />
+      <point x="2920.6224746777552" y="1881.0" />
+      <point x="722.1875" y="1881.0" />
+      <point x="722.1875" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="things.Field" target="things.Pump" relationship="DEPENDENCY">
+      <point x="32.625" y="-357.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-55.5625" y="3795.0" />
+      <point x="1729.375" y="3795.0" />
+      <point x="0.0" y="405.0" />
+    </edge>
+    <edge source="things.Pipe" target="main.Main" relationship="DEPENDENCY">
+      <point x="-140.25" y="-801.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="894.6875" y="4563.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="entities.Nomad" target="things.Pipe" relationship="DEPENDENCY">
+      <point x="-85.0" y="140.5" />
+      <point x="4086.92496086554" y="779.0" />
+      <point x="301.4375" y="779.0" />
+      <point x="301.4375" y="819.0" />
+      <point x="-147.875" y="819.0" />
+      <point x="-147.875" y="1129.0" />
+      <point x="-261.625" y="1129.0" />
+      <point x="-261.625" y="4563.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="-140.25" y="-801.0" />
+    </edge>
+    <edge source="main.NomadButtonPanel" target="main.NomadPipeInWindow" relationship="CREATE">
+      <point x="-67.0" y="-68.0" />
+      <point x="2942.9558080110887" y="1411.0" />
+      <point x="3164.9558080110887" y="1411.0" />
+      <point x="3164.9558080110887" y="1361.0" />
+      <point x="1867.1433080110887" y="1361.0" />
+      <point x="67.0" y="44.0" />
+    </edge>
+    <edge source="main.PlumberPipeOutWindow" target="entities.Player" relationship="DEPENDENCY">
+      <point x="0.0" y="-44.0" />
+      <point x="1438.893308011089" y="1029.0" />
+      <point x="2374.92496086554" y="1029.0" />
+      <point x="2374.92496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="things.Field" target="things.State" relationship="TO_ONE">
+      <point x="-32.625" y="-357.0" />
+      <point x="-142.75" y="3805.0" />
+      <point x="-169.875" y="3805.0" />
+      <point x="-169.875" y="2911.0" />
+      <point x="-70.50252532224431" y="2911.0" />
+      <point x="-45.0" y="56.0" />
+    </edge>
+    <edge source="main.PlumberPickUpWindow" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="3259.955808011089" y="1291.0" />
+      <point x="843.4249608655398" y="1291.0" />
+      <point x="843.4249608655398" y="1421.0" />
+      <point x="772.4766413444224" y="1421.0" />
+      <point x="772.4766413444224" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.Game" target="things.Pipe" relationship="TO_MANY">
+      <point x="91.5" y="189.0" />
+      <point x="4684.674960865539" y="2675.0" />
+      <point x="4659.174960865539" y="2675.0" />
+      <point x="4659.174960865539" y="4583.0" />
+      <point x="1115.1749608655396" y="4583.0" />
+      <point x="140.25" y="-801.0" />
+    </edge>
+    <edge source="main.PlumberMoveWindow" target="main.PlumberPipeInteraction" relationship="CREATE">
+      <point x="-67.0" y="-44.0" />
+      <point x="2599.1433080110887" y="1039.0" />
+      <point x="2663.92496086554" y="1039.0" />
+      <point x="67.0" y="68.0" />
+    </edge>
+    <edge source="main.PlumberPipeInWindow" target="entities.Player" relationship="DEPENDENCY">
+      <point x="0.0" y="-44.0" />
+      <point x="2088.1433080110887" y="1059.0" />
+      <point x="2890.42496086554" y="1059.0" />
+      <point x="2890.42496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="main.Game" target="main.Main" relationship="DEPENDENCY">
+      <point x="-30.5" y="189.0" />
+      <point x="4562.674960865539" y="2665.0" />
+      <point x="1538.4874608655398" y="2665.0" />
+      <point x="1538.4874608655398" y="2675.0" />
+      <point x="832.1041666666667" y="2675.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.Game" target="entities.Nomad" relationship="TO_MANY">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="6036.854166666666" y="2193.0" />
+      <point x="6036.854166666666" y="759.0" />
+      <point x="4256.924960865539" y="759.0" />
+      <point x="85.0" y="140.5" />
+    </edge>
+    <edge source="entities.Plumber" target="things.Pump" relationship="CREATE">
+      <point x="32.75" y="165.0" />
+      <point x="3732.92496086554" y="769.0" />
+      <point x="3705.17496086554" y="769.0" />
+      <point x="3705.17496086554" y="829.0" />
+      <point x="3123.67496086554" y="829.0" />
+      <point x="3123.67496086554" y="1089.0" />
+      <point x="2521.6433080110887" y="1089.0" />
+      <point x="2521.6433080110887" y="1391.0" />
+      <point x="1703.3724746777555" y="1391.0" />
+      <point x="1703.3724746777555" y="2911.0" />
+      <point x="1763.0" y="2911.0" />
+      <point x="33.625" y="-405.0" />
+    </edge>
+    <edge source="main.Controller" target="main.Game" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="6069.354166666666" y="6248.0" />
+      <point x="6069.354166666666" y="2705.0" />
+      <point x="1538.4874608655396" y="2705.0" />
+      <point x="1538.4874608655398" y="2665.0" />
+      <point x="4562.674960865539" y="2665.0" />
+      <point x="-30.5" y="189.0" />
+    </edge>
+    <edge source="main.Main" target="main.Game" relationship="CREATE">
+      <point x="0.0" y="-44.0" />
+      <point x="894.6875" y="2695.0" />
+      <point x="4649.174960865539" y="2695.0" />
+      <point x="4649.174960865539" y="2675.0" />
+      <point x="4623.674960865539" y="2675.0" />
+      <point x="30.5" y="189.0" />
+    </edge>
+    <edge source="main.Game" target="main.GameWindow" relationship="TO_ONE">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="4815.270833333334" y="2193.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="states.InGame" target="entities.Nomad" relationship="CREATE">
+      <point x="-43.5" y="-56.0" />
+      <point x="4208.518308011089" y="1931.0" />
+      <point x="4136.67496086554" y="1931.0" />
+      <point x="4136.67496086554" y="1891.0" />
+      <point x="4171.92496086554" y="1891.0" />
+      <point x="0.0" y="140.5" />
+    </edge>
+    <edge source="main.Game" target="main.GamePanel" relationship="CREATE">
+      <point x="0.0" y="-189.0" />
+      <point x="4593.174960865539" y="2233.0" />
+      <point x="4577.004714548821" y="2233.0" />
+      <point x="4577.004714548821" y="2203.0" />
+      <point x="4543.270833333334" y="2203.0" />
+      <point x="4543.270833333334" y="1901.0" />
+      <point x="5621.979166666666" y="1901.0" />
+      <point x="-30.875" y="81.0" />
+    </edge>
+    <edge source="main.Main" target="entities.Player" relationship="DEPENDENCY">
+      <point x="-54.666666666666515" y="-44.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="1107.6099355432955" y="2665.0" />
+      <point x="1107.6099355432955" y="1371.0" />
+      <point x="1583.393308011089" y="1371.0" />
+      <point x="1583.393308011089" y="1039.0" />
+      <point x="2452.42496086554" y="1039.0" />
+      <point x="2452.42496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="entities.Player" target="main.Main" relationship="DEPENDENCY">
+      <point x="-31.125" y="477.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2452.42496086554" y="375.0" />
+      <point x="2452.42496086554" y="1039.0" />
+      <point x="1583.393308011089" y="1039.0" />
+      <point x="1583.393308011089" y="1371.0" />
+      <point x="1107.6099355432955" y="1371.0" />
+      <point x="1107.6099355432955" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="entities.Plumber" target="things.Pipe" relationship="TO_ONE">
+      <point x="98.25" y="165.0" />
+      <point x="3798.424960865539" y="769.0" />
+      <point x="5941.854166666666" y="769.0" />
+      <point x="5941.854166666666" y="799.0" />
+      <point x="6058.354166666666" y="799.0" />
+      <point x="6058.354166666666" y="4573.0" />
+      <point x="4659.174960865539" y="4573.0" />
+      <point x="4659.174960865539" y="4583.0" />
+      <point x="1115.1749608655396" y="4583.0" />
+      <point x="140.25" y="-801.0" />
+    </edge>
+    <edge source="things.Pipe" target="entities.Plumber" relationship="TO_ONE">
+      <point x="140.25" y="-801.0" />
+      <point x="1115.1749608655396" y="4583.0" />
+      <point x="4659.174960865539" y="4583.0" />
+      <point x="4659.174960865539" y="4573.0" />
+      <point x="6058.354166666666" y="4573.0" />
+      <point x="6058.354166666666" y="799.0" />
+      <point x="5941.854166666666" y="799.0" />
+      <point x="5941.854166666666" y="769.0" />
+      <point x="3798.424960865539" y="769.0" />
+      <point x="98.25" y="165.0" />
+    </edge>
+    <edge source="entities.Player" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="62.25" y="-477.0" />
+      <point x="3512.8308080110887" y="-682.0" />
+      <point x="4371.705808011089" y="-682.0" />
+      <point x="58.5" y="44.0" />
+    </edge>
+    <edge source="main.PlumberPipeInWindow" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2021.1433080110887" y="1341.0" />
+      <point x="710.7974355432955" y="1341.0" />
+      <point x="710.7974355432955" y="1471.0" />
+      <point x="-338.0" y="1471.0" />
+      <point x="-338.0" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberPickUpWindow" target="things.Field" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="3259.955808011089" y="1291.0" />
+      <point x="843.4249608655398" y="1291.0" />
+      <point x="843.4249608655398" y="1421.0" />
+      <point x="96.99747467775569" y="1421.0" />
+      <point x="96.99747467775569" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="entities.Plumber" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-32.75" y="165.0" />
+      <point x="3667.42496086554" y="769.0" />
+      <point x="3695.17496086554" y="769.0" />
+      <point x="3695.1749608655396" y="809.0" />
+      <point x="6110.354166666666" y="809.0" />
+      <point x="6110.354166666666" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="things.Field" target="things.Pipe" relationship="DEPENDENCY">
+      <point x="-65.25" y="357.0" />
+      <point x="-175.375" y="4573.0" />
+      <point x="-316.5" y="4573.0" />
+      <point x="-316.5" y="4583.0" />
+      <point x="119.17496086553979" y="4583.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="-140.25" y="-801.0" />
+    </edge>
+    <edge source="things.Pump" target="main.Main" relationship="DEPENDENCY">
+      <point x="-33.625" y="-405.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="641.6875" y="2891.0" />
+      <point x="894.6875" y="2891.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="things.Pipe" target="things.State" relationship="DEPENDENCY">
+      <point x="-140.25" y="-801.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="203.1224746777557" y="4563.0" />
+      <point x="203.1224746777557" y="2871.0" />
+      <point x="19.49747467775569" y="2871.0" />
+      <point x="45.0" y="56.0" />
+    </edge>
+    <edge source="entities.Nomad" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-85.0" y="140.5" />
+      <point x="4086.92496086554" y="779.0" />
+      <point x="301.4375" y="779.0" />
+      <point x="301.43750000000045" y="819.0" />
+      <point x="6110.354166666666" y="819.0" />
+      <point x="6110.354166666666" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="main.PlumberPickUpWindow" relationship="CREATE">
+      <point x="-67.0" y="-68.0" />
+      <point x="3930.17496086554" y="1481.0" />
+      <point x="3991.92496086554" y="1481.0" />
+      <point x="3991.92496086554" y="1351.0" />
+      <point x="3393.9558080110887" y="1351.0" />
+      <point x="67.0" y="44.0" />
+    </edge>
+    <edge source="entities.Plumber" target="entities.Player" relationship="GENERALIZATION">
+      <point x="65.5" y="-165.0" />
+      <point x="3765.67496086554" y="345.0" />
+      <point x="3481.7058080110887" y="345.0" />
+      <point x="31.125" y="477.0" />
+    </edge>
+    <edge source="main.PlumberPipeOutWindow" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1371.893308011089" y="1351.0" />
+      <point x="615.5599746777557" y="1351.0" />
+      <point x="615.5599746777557" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="main.restart_menu" target="main.Controller" relationship="DEPENDENCY">
+      <point x="75.375" y="128.5" />
+      <point x="5463.229166666666" y="1891.0" />
+      <point x="6089.854166666666" y="1891.0" />
+      <point x="6089.854166666666" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.NomadPipeInWindow" target="things.Field" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1733.1433080110887" y="1311.0" />
+      <point x="822.4249608655398" y="1311.0" />
+      <point x="822.4249608655398" y="1431.0" />
+      <point x="74.99747467775569" y="1431.0" />
+      <point x="74.99747467775569" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="entities.Player" target="things.Field" relationship="DEPENDENCY">
+      <point x="-31.125" y="477.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="-158.875" y="375.0" />
+      <point x="-158.875" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="main.PlumberPipeOutWindow" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1371.893308011089" y="1351.0" />
+      <point x="615.5599746777557" y="1351.0" />
+      <point x="615.5599746777557" y="1481.0" />
+      <point x="772.4766413444224" y="1481.0" />
+      <point x="772.4766413444224" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.NomadPipeInWindow" target="main.Game" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1733.1433080110887" y="1311.0" />
+      <point x="822.4249608655398" y="1311.0" />
+      <point x="822.4249608655398" y="1431.0" />
+      <point x="2865.4558080110887" y="1431.0" />
+      <point x="2865.4558080110887" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="things.Cistern" target="things.Pipe" relationship="DEPENDENCY">
+      <point x="-23.625" y="128.5" />
+      <point x="235.6849746777557" y="1891.0" />
+      <point x="-251.125" y="1891.0" />
+      <point x="-251.125" y="4563.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="-140.25" y="-801.0" />
+    </edge>
+    <edge source="main.Game" target="entities.Player" relationship="DEPENDENCY">
+      <point x="-81.33333333333348" y="-189.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="3175.4558080110887" y="2203.0" />
+      <point x="3175.4558080110887" y="1129.0" />
+      <point x="3466.42496086554" y="1129.0" />
+      <point x="3466.42496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="things.Pipe" target="things.Field" relationship="GENERALIZATION">
+      <point x="-46.75" y="-801.0" />
+      <point x="928.1749608655398" y="4573.0" />
+      <point x="-44.875" y="4573.0" />
+      <point x="65.25" y="357.0" />
+    </edge>
+    <edge source="main.NomadPipeOutWindow" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2310.1433080110887" y="1301.0" />
+      <point x="832.4249608655398" y="1301.0" />
+      <point x="832.4249608655398" y="1441.0" />
+      <point x="-327.0" y="1441.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberPickUpWindow" target="entities.Plumber" relationship="DEPENDENCY">
+      <point x="0.0" y="-44.0" />
+      <point x="3326.9558080110887" y="1149.0" />
+      <point x="3630.79996086554" y="1149.0" />
+      <point x="3630.79996086554" y="1129.0" />
+      <point x="3695.17496086554" y="1129.0" />
+      <point x="3695.17496086554" y="769.0" />
+      <point x="3667.42496086554" y="769.0" />
+      <point x="-32.75" y="165.0" />
+    </edge>
+    <edge source="main.NomadMoveWindow" target="main.Game" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1083.893308011089" y="1321.0" />
+      <point x="801.4249608655398" y="1321.0" />
+      <point x="801.4249608655396" y="1461.0" />
+      <point x="2865.4558080110887" y="1461.0" />
+      <point x="2865.4558080110887" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="main.Main" target="main.Game" relationship="TO_ONE">
+      <point x="54.666666666666515" y="-44.0" />
+      <point x="949.3541666666665" y="2685.0" />
+      <point x="4659.174960865539" y="2685.0" />
+      <point x="4659.174960865539" y="2675.0" />
+      <point x="4684.674960865539" y="2675.0" />
+      <point x="91.5" y="189.0" />
+    </edge>
+    <edge source="main.restart_menu" target="main.ImagePanel" relationship="CREATE">
+      <point x="-67.0" y="-128.5" />
+      <point x="5320.854166666666" y="1481.0" />
+      <point x="5246.354166666666" y="1481.0" />
+      <point x="-61.75" y="44.0" />
+    </edge>
+    <edge source="main.PlumberPipeOutWindow" target="main.Game" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1371.893308011089" y="1351.0" />
+      <point x="615.5599746777557" y="1351.0" />
+      <point x="615.5599746777557" y="1481.0" />
+      <point x="1966.4558080110887" y="1481.0" />
+      <point x="1966.4558080110887" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="main.Controller" target="entities.Nomad" relationship="TO_ONE">
+      <point x="80.33333333333348" y="-297.0" />
+      <point x="5935.608881215487" y="6268.0" />
+      <point x="6132.354166666666" y="6268.0" />
+      <point x="6132.354166666666" y="789.0" />
+      <point x="6036.854166666666" y="789.0" />
+      <point x="6036.854166666666" y="759.0" />
+      <point x="4256.924960865539" y="759.0" />
+      <point x="85.0" y="140.5" />
+    </edge>
+    <edge source="main.NomadMoveWindow" target="things.Field" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1083.893308011089" y="1321.0" />
+      <point x="801.4249608655398" y="1321.0" />
+      <point x="801.4249608655398" y="1461.0" />
+      <point x="74.99747467775569" y="1461.0" />
+      <point x="74.99747467775569" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="main.NomadPipeInteraction" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="68.0" />
+      <point x="764.1297145488202" y="1159.0" />
+      <point x="1006.393308011089" y="1159.0" />
+      <point x="1006.393308011089" y="1401.0" />
+      <point x="819.1099355432955" y="1401.0" />
+      <point x="819.1099355432955" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.PlumberMoveWindow" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2599.1433080110887" y="1331.0" />
+      <point x="791.4249608655398" y="1331.0" />
+      <point x="791.4249608655398" y="1451.0" />
+      <point x="-338.0" y="1451.0" />
+      <point x="-338.0" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.Game" target="main.restart_menu" relationship="CREATE">
+      <point x="0.0" y="-189.0" />
+      <point x="4593.174960865539" y="2233.0" />
+      <point x="4577.004714548821" y="2233.0" />
+      <point x="4577.004714548821" y="2203.0" />
+      <point x="4533.270833333334" y="2203.0" />
+      <point x="4533.270833333334" y="1891.0" />
+      <point x="5362.729166666666" y="1891.0" />
+      <point x="-25.125" y="128.5" />
+    </edge>
+    <edge source="main.PlumberPipeInteraction" target="entities.Plumber" relationship="DEPENDENCY">
+      <point x="0.0" y="-68.0" />
+      <point x="2596.92496086554" y="789.0" />
+      <point x="3695.17496086554" y="789.0" />
+      <point x="3695.17496086554" y="769.0" />
+      <point x="3667.42496086554" y="769.0" />
+      <point x="-32.75" y="165.0" />
+    </edge>
+    <edge source="main.NomadPipeInWindow" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1733.1433080110887" y="1311.0" />
+      <point x="822.4249608655398" y="1311.0" />
+      <point x="822.4249608655398" y="1431.0" />
+      <point x="772.4766413444224" y="1431.0" />
+      <point x="772.4766413444224" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.startMenu" target="main.Controller" relationship="DEPENDENCY">
+      <point x="76.875" y="104.0" />
+      <point x="5275.145833333334" y="2213.0" />
+      <point x="6079.354166666666" y="2213.0" />
+      <point x="6079.354166666666" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.Game" target="main.startMenu" relationship="TO_ONE">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="5223.895833333334" y="2193.0" />
+      <point x="25.625" y="104.0" />
+    </edge>
+    <edge source="main.NomadPipeOutWindow" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2310.1433080110887" y="1301.0" />
+      <point x="832.4249608655398" y="1301.0" />
+      <point x="832.4249608655398" y="1441.0" />
+      <point x="711.6875" y="1441.0" />
+      <point x="711.6875" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="things.Pump" target="things.State" relationship="DEPENDENCY">
+      <point x="-33.625" y="-405.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="641.6875" y="2881.0" />
+      <point x="203.1224746777557" y="2881.0" />
+      <point x="203.1224746777557" y="2871.0" />
+      <point x="19.49747467775569" y="2871.0" />
+      <point x="45.0" y="56.0" />
+    </edge>
+    <edge source="main.NomadMoveWindow" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1083.893308011089" y="1321.0" />
+      <point x="801.4249608655398" y="1321.0" />
+      <point x="801.4249608655398" y="1461.0" />
+      <point x="696.1875" y="1461.0" />
+      <point x="696.1875" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="entities.Nomad" target="things.Field" relationship="DEPENDENCY">
+      <point x="-85.0" y="140.5" />
+      <point x="4086.92496086554" y="779.0" />
+      <point x="301.4375" y="779.0" />
+      <point x="301.4375" y="819.0" />
+      <point x="-136.5025253222443" y="819.0" />
+      <point x="-136.5025253222443" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="main.startMenu" target="main.settings" relationship="CREATE">
+      <point x="-68.33333333333348" y="-104.0" />
+      <point x="5129.9375" y="1931.0" />
+      <point x="4913.484935543295" y="1931.0" />
+      <point x="4913.484935543295" y="1911.0" />
+      <point x="5921.354166666666" y="1911.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="main.settings" target="main.Controller" relationship="DEPENDENCY">
+      <point x="70.0" y="68.0" />
+      <point x="5991.354166666666" y="1881.0" />
+      <point x="6099.854166666666" y="1881.0" />
+      <point x="6099.854166666666" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="states.InGame" target="things.Cactus" relationship="DEPENDENCY">
+      <point x="43.5" y="-56.0" />
+      <point x="4295.518308011089" y="1931.0" />
+      <point x="4395.270833333334" y="1931.0" />
+      <point x="4395.270833333334" y="1831.0" />
+      <point x="4495.145833333334" y="1831.0" />
+      <point x="-23.125" y="56.0" />
+    </edge>
+    <edge source="main.Game" target="main.PlumberButtonPanel" relationship="TO_ONE">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="4564.270833333334" y="2193.0" />
+      <point x="4564.270833333334" y="1881.0" />
+      <point x="4667.705808011089" y="1881.0" />
+      <point x="4667.705808011089" y="1841.0" />
+      <point x="4086.508294198873" y="1841.0" />
+      <point x="89.33333333333303" y="68.0" />
+    </edge>
+    <edge source="main.NomadPipeInteraction" target="entities.Nomad" relationship="DEPENDENCY">
+      <point x="0.0" y="-68.0" />
+      <point x="831.1297145488202" y="829.0" />
+      <point x="301.4375" y="829.0" />
+      <point x="301.4375" y="779.0" />
+      <point x="4086.92496086554" y="779.0" />
+      <point x="-85.0" y="140.5" />
+    </edge>
+    <edge source="main.PlumberPipeInteraction" target="entities.Player" relationship="DEPENDENCY">
+      <point x="0.0" y="-68.0" />
+      <point x="2596.92496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="things.Spring" target="things.Pump" relationship="GENERALIZATION">
+      <point x="0.0" y="153.0" />
+      <point x="472.8099746777557" y="2871.0" />
+      <point x="398.0474355432955" y="2871.0" />
+      <point x="398.0474355432955" y="2911.0" />
+      <point x="1628.5" y="2911.0" />
+      <point x="-100.875" y="-405.0" />
+    </edge>
+    <edge source="main.PlumberPickUpWindow" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="3259.955808011089" y="1291.0" />
+      <point x="843.4249608655398" y="1291.0" />
+      <point x="843.4249608655398" y="1421.0" />
+      <point x="732.6875" y="1421.0" />
+      <point x="732.6875" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="main.PlumberPipeOutWindow" relationship="CREATE">
+      <point x="-67.0" y="-68.0" />
+      <point x="3930.17496086554" y="1481.0" />
+      <point x="3991.92496086554" y="1481.0" />
+      <point x="3991.92496086554" y="1351.0" />
+      <point x="1505.893308011089" y="1351.0" />
+      <point x="67.0" y="44.0" />
+    </edge>
+    <edge source="main.LoadSave" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="-58.5" y="44.0" />
+      <point x="4254.705808011089" y="-693.0" />
+      <point x="4176.205808011089" y="-693.0" />
+      <point x="4176.205808011089" y="-757.0" />
+      <point x="-117.0" y="-0.0" />
+    </edge>
+    <edge source="main.Game" target="main.Controller" relationship="TO_ONE">
+      <point x="91.5" y="189.0" />
+      <point x="4684.674960865539" y="2675.0" />
+      <point x="4659.174960865539" y="2675.0" />
+      <point x="4659.174960865539" y="2685.0" />
+      <point x="6132.354166666666" y="2685.0" />
+      <point x="6132.354166666666" y="6268.0" />
+      <point x="5935.608881215487" y="6268.0" />
+      <point x="80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.GamePanel" target="main.GamePanel" relationship="DEPENDENCY">
+      <point x="-92.625" y="81.0" />
+      <point x="5560.229166666666" y="1757.0" />
+      <point x="5509.354166666666" y="1757.0" />
+      <point x="5509.354166666666" y="1656.0" />
+      <point x="-123.5" y="-0.0" />
+    </edge>
+    <edge source="entities.Plumber" target="things.Field" relationship="DEPENDENCY">
+      <point x="-32.75" y="165.0" />
+      <point x="3667.42496086554" y="769.0" />
+      <point x="3695.17496086554" y="769.0" />
+      <point x="3695.17496086554" y="809.0" />
+      <point x="-126.00252532224431" y="809.0" />
+      <point x="-126.00252532224431" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="main.GameWindow" target="main.PlumberButtonPanel" relationship="TO_ONE">
+      <point x="-120.25" y="-80.5" />
+      <point x="4695.020833333334" y="1931.0" />
+      <point x="4733.080808011089" y="1931.0" />
+      <point x="4733.080808011089" y="1861.0" />
+      <point x="4667.705808011089" y="1861.0" />
+      <point x="4667.705808011089" y="1841.0" />
+      <point x="4086.508294198873" y="1841.0" />
+      <point x="89.33333333333303" y="68.0" />
+    </edge>
+    <edge source="main.NomadButtonPanel" target="main.NomadPipeOutWindow" relationship="CREATE">
+      <point x="-67.0" y="-68.0" />
+      <point x="2942.9558080110887" y="1411.0" />
+      <point x="3164.9558080110887" y="1411.0" />
+      <point x="3164.9558080110887" y="1361.0" />
+      <point x="2444.1433080110887" y="1361.0" />
+      <point x="67.0" y="44.0" />
+    </edge>
+    <edge source="main.NomadButtonPanel" target="main.NomadMoveWindow" relationship="CREATE">
+      <point x="-67.0" y="-68.0" />
+      <point x="2942.9558080110887" y="1411.0" />
+      <point x="3164.9558080110887" y="1411.0" />
+      <point x="3164.9558080110887" y="1361.0" />
+      <point x="1217.893308011089" y="1361.0" />
+      <point x="67.0" y="44.0" />
+    </edge>
+    <edge source="main.GameWindow" target="main.GamePanel" relationship="DEPENDENCY">
+      <point x="120.25" y="-80.5" />
+      <point x="4935.520833333334" y="1921.0" />
+      <point x="5683.729166666666" y="1921.0" />
+      <point x="30.875" y="81.0" />
+    </edge>
+    <edge source="main.Controller" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="6069.354166666666" y="6248.0" />
+      <point x="6069.354166666666" y="3785.0" />
+      <point x="1729.3750000000005" y="3785.0" />
+      <point x="0.0" y="405.0" />
+    </edge>
+    <edge source="main.PlumberMoveWindow" target="entities.Player" relationship="DEPENDENCY">
+      <point x="67.0" y="-44.0" />
+      <point x="2733.1433080110887" y="1099.0" />
+      <point x="3180.2974355432953" y="1099.0" />
+      <point x="3180.2974355432953" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-89.33333333333303" y="68.0" />
+      <point x="3907.841627532207" y="1871.0" />
+      <point x="808.6099355432955" y="1871.0" />
+      <point x="808.6099355432955" y="1911.0" />
+      <point x="748.0599746777557" y="1911.0" />
+      <point x="748.0599746777557" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="main.Game" target="main.restart_menu" relationship="TO_ONE">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="5412.979166666666" y="2193.0" />
+      <point x="25.125" y="128.5" />
+    </edge>
+    <edge source="entities.Player" target="things.Pump" relationship="TO_ONE">
+      <point x="93.375" y="477.0" />
+      <point x="3543.9558080110887" y="335.0" />
+      <point x="3551.333333333333" y="335.0" />
+      <point x="3551.333333333333" y="365.0" />
+      <point x="3284.17496086554" y="365.0" />
+      <point x="3284.17496086554" y="1109.0" />
+      <point x="2810.6433080110887" y="1109.0" />
+      <point x="2810.6433080110887" y="1401.0" />
+      <point x="1853.3724746777552" y="1401.0" />
+      <point x="1853.3724746777552" y="2911.0" />
+      <point x="1830.25" y="2911.0" />
+      <point x="100.875" y="-405.0" />
+    </edge>
+    <edge source="main.Controller" target="main.Controller" relationship="DEPENDENCY">
+      <point x="0.0" y="297.0" />
+      <point x="5855.275547882153" y="6903.0" />
+      <point x="5714.775547882153" y="6903.0" />
+      <point x="5714.775547882153" y="6586.0" />
+      <point x="-120.5" y="-0.0" />
+    </edge>
+    <edge source="main.settings" target="main.settings" relationship="DEPENDENCY">
+      <point x="-70.0" y="68.0" />
+      <point x="5851.354166666666" y="1744.0" />
+      <point x="5796.354166666666" y="1744.0" />
+      <point x="5796.354166666666" y="1656.0" />
+      <point x="-105.0" y="-0.0" />
+    </edge>
+    <edge source="main.NomadPipeInteraction" target="entities.Player" relationship="DEPENDENCY">
+      <point x="0.0" y="-68.0" />
+      <point x="831.1297145488202" y="829.0" />
+      <point x="301.4375" y="829.0" />
+      <point x="301.4375" y="799.0" />
+      <point x="290.9375" y="799.0" />
+      <point x="290.9375" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="states.InGame" target="main.Game" relationship="TO_ONE">
+      <point x="58.0" y="56.0" />
+      <point x="4310.018308011089" y="2193.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="main.Game" target="states.InGame" relationship="TO_ONE">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="4310.018308011089" y="2193.0" />
+      <point x="58.0" y="56.0" />
+    </edge>
+    <edge source="things.Pipe" target="things.Pump" relationship="TO_ONE">
+      <point x="140.25" y="-801.0" />
+      <point x="1115.1749608655396" y="4583.0" />
+      <point x="4659.174960865539" y="4583.0" />
+      <point x="4659.174960865539" y="4573.0" />
+      <point x="3970.23746086554" y="4573.0" />
+      <point x="3970.23746086554" y="3805.0" />
+      <point x="1836.9750000000004" y="3805.0" />
+      <point x="107.60000000000036" y="405.0" />
+    </edge>
+    <edge source="main.NomadPipeInteraction" target="things.Pipe" relationship="DEPENDENCY">
+      <point x="-67.0" y="68.0" />
+      <point x="764.1297145488202" y="1159.0" />
+      <point x="134.3099746777557" y="1159.0" />
+      <point x="134.3099746777557" y="4563.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="-140.25" y="-801.0" />
+    </edge>
+    <edge source="entities.Plumber" target="things.Pump" relationship="TO_ONE">
+      <point x="98.25" y="165.0" />
+      <point x="3798.424960865539" y="769.0" />
+      <point x="5941.854166666666" y="769.0" />
+      <point x="5941.854166666666" y="799.0" />
+      <point x="3300.42496086554" y="799.0" />
+      <point x="3300.42496086554" y="1119.0" />
+      <point x="2854.4558080110887" y="1119.0" />
+      <point x="2854.4558080110887" y="1411.0" />
+      <point x="1853.3724746777552" y="1411.0" />
+      <point x="1853.3724746777552" y="2911.0" />
+      <point x="1830.25" y="2911.0" />
+      <point x="100.875" y="-405.0" />
+    </edge>
+    <edge source="things.Pump" target="things.Pipe" relationship="TO_MANY">
+      <point x="107.60000000000036" y="405.0" />
+      <point x="1836.9750000000004" y="3805.0" />
+      <point x="3970.23746086554" y="3805.0" />
+      <point x="3970.23746086554" y="4573.0" />
+      <point x="4659.174960865539" y="4573.0" />
+      <point x="4659.174960865539" y="4583.0" />
+      <point x="1115.1749608655396" y="4583.0" />
+      <point x="140.25" y="-801.0" />
+    </edge>
+    <edge source="entities.Plumber" target="main.Main" relationship="DEPENDENCY">
+      <point x="-32.75" y="165.0" />
+      <point x="3667.42496086554" y="769.0" />
+      <point x="3695.17496086554" y="769.0" />
+      <point x="3695.17496086554" y="809.0" />
+      <point x="2968.17496086554" y="809.0" />
+      <point x="2968.17496086554" y="1069.0" />
+      <point x="2232.6433080110887" y="1069.0" />
+      <point x="2232.6433080110887" y="1381.0" />
+      <point x="1468.3599355432953" y="1381.0" />
+      <point x="1468.3599355432953" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.startMenu" target="main.startMenu" relationship="DEPENDENCY">
+      <point x="-76.875" y="104.0" />
+      <point x="5121.395833333334" y="2181.0" />
+      <point x="5075.770833333334" y="2181.0" />
+      <point x="5075.770833333334" y="2057.0" />
+      <point x="-102.5" y="-0.0" />
+    </edge>
+    <edge source="main.NomadPipeInWindow" target="entities.Player" relationship="DEPENDENCY">
+      <point x="0.0" y="-44.0" />
+      <point x="1800.1433080110887" y="1049.0" />
+      <point x="2741.42496086554" y="1049.0" />
+      <point x="2741.42496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="main.restart_menu" target="main.ImagePanel" relationship="TO_ONE">
+      <point x="0.0" y="-128.5" />
+      <point x="5387.854166666666" y="1471.0" />
+      <point x="5322.354166666666" y="1471.0" />
+      <point x="5322.354166666666" y="1461.0" />
+      <point x="5369.854166666666" y="1461.0" />
+      <point x="61.75" y="44.0" />
+    </edge>
+    <edge source="states.InGame" target="things.Pipe" relationship="CREATE">
+      <point x="0.0" y="56.0" />
+      <point x="4252.018308011089" y="2213.0" />
+      <point x="1925.6224746777552" y="2213.0" />
+      <point x="1925.6224746777552" y="4573.0" />
+      <point x="1739.375" y="4573.0" />
+      <point x="1739.375" y="4593.0" />
+      <point x="1021.6749608655398" y="4593.0" />
+      <point x="46.75" y="-801.0" />
+    </edge>
+    <edge source="main.Controller" target="main.PlumberButtonPanel" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="1911.0" />
+      <point x="808.6099355432955" y="1911.0" />
+      <point x="808.6099355432955" y="1871.0" />
+      <point x="3907.841627532207" y="1871.0" />
+      <point x="-89.33333333333303" y="68.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-89.33333333333303" y="68.0" />
+      <point x="3907.841627532207" y="1871.0" />
+      <point x="808.6099355432955" y="1871.0" />
+      <point x="808.6099355432955" y="1911.0" />
+      <point x="-327.0" y="1911.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberPipeInteraction" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="68.0" />
+      <point x="2529.92496086554" y="1009.0" />
+      <point x="964.393308011089" y="1009.0" />
+      <point x="964.393308011089" y="1139.0" />
+      <point x="1006.393308011089" y="1139.0" />
+      <point x="1006.393308011089" y="1411.0" />
+      <point x="819.1099355432955" y="1411.0" />
+      <point x="819.1099355432955" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.Controller" target="entities.Plumber" relationship="TO_ONE">
+      <point x="80.33333333333348" y="-297.0" />
+      <point x="5935.608881215487" y="6268.0" />
+      <point x="6132.354166666666" y="6268.0" />
+      <point x="6132.354166666666" y="799.0" />
+      <point x="5941.854166666666" y="799.0" />
+      <point x="5941.854166666666" y="769.0" />
+      <point x="3798.424960865539" y="769.0" />
+      <point x="98.25" y="165.0" />
+    </edge>
+    <edge source="things.Cactus" target="things.Cactus" relationship="DEPENDENCY">
+      <point x="-69.375" y="56.0" />
+      <point x="4448.895833333334" y="1732.0" />
+      <point x="4405.770833333334" y="1732.0" />
+      <point x="4405.770833333334" y="1656.0" />
+      <point x="-92.5" y="-0.0" />
+    </edge>
+    <edge source="main.Controller" target="main.NomadButtonPanel" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="1921.0" />
+      <point x="722.1875" y="1921.0" />
+      <point x="722.1875" y="1881.0" />
+      <point x="2920.6224746777552" y="1881.0" />
+      <point x="-89.33333333333326" y="68.0" />
+    </edge>
+    <edge source="main.NomadButtonPanel" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-89.33333333333326" y="68.0" />
+      <point x="2920.6224746777552" y="1881.0" />
+      <point x="722.1875" y="1881.0" />
+      <point x="722.1875" y="1921.0" />
+      <point x="-327.0" y="1921.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.Game" target="main.NomadButtonPanel" relationship="TO_ONE">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="4554.270833333334" y="2193.0" />
+      <point x="4554.270833333334" y="1861.0" />
+      <point x="3099.289141344422" y="1861.0" />
+      <point x="89.33333333333326" y="68.0" />
+    </edge>
+    <edge source="main.GameWindow" target="main.NomadButtonPanel" relationship="TO_ONE">
+      <point x="-120.25" y="-80.5" />
+      <point x="4695.020833333334" y="1931.0" />
+      <point x="4733.080808011089" y="1931.0" />
+      <point x="4733.080808011089" y="1871.0" />
+      <point x="4554.270833333334" y="1871.0" />
+      <point x="4554.270833333334" y="1861.0" />
+      <point x="3099.289141344422" y="1861.0" />
+      <point x="89.33333333333326" y="68.0" />
+    </edge>
+    <edge source="main.Game" target="things.Pump" relationship="TO_MANY">
+      <point x="91.5" y="189.0" />
+      <point x="4684.674960865539" y="2675.0" />
+      <point x="4659.174960865539" y="2675.0" />
+      <point x="4659.174960865539" y="2685.0" />
+      <point x="1853.3724746777552" y="2685.0" />
+      <point x="1853.3724746777552" y="2911.0" />
+      <point x="1830.25" y="2911.0" />
+      <point x="100.875" y="-405.0" />
+    </edge>
+    <edge source="main.Controller" target="main.GameWindow" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="6069.354166666666" y="6248.0" />
+      <point x="6069.354166666666" y="2223.0" />
+      <point x="4975.604166666667" y="2223.0" />
+      <point x="160.33333333333348" y="80.5" />
+    </edge>
+    <edge source="main.Game" target="entities.Plumber" relationship="TO_MANY">
+      <point x="81.33333333333348" y="-189.0" />
+      <point x="4674.508294198873" y="2233.0" />
+      <point x="5392.608881215487" y="2233.0" />
+      <point x="5392.608881215487" y="2193.0" />
+      <point x="5498.854166666666" y="2193.0" />
+      <point x="5498.854166666666" y="799.0" />
+      <point x="5941.854166666666" y="799.0" />
+      <point x="5941.854166666666" y="769.0" />
+      <point x="3798.424960865539" y="769.0" />
+      <point x="98.25" y="165.0" />
+    </edge>
+    <edge source="main.Controller" target="things.Pipe" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="1068.4249608655398" y="6248.0" />
+      <point x="93.5" y="801.0" />
+    </edge>
+    <edge source="things.Pipe" target="main.Controller" relationship="DEPENDENCY">
+      <point x="93.5" y="801.0" />
+      <point x="1068.4249608655398" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="main.PlumberPipeInWindow" relationship="CREATE">
+      <point x="-67.0" y="-68.0" />
+      <point x="3930.17496086554" y="1481.0" />
+      <point x="3991.92496086554" y="1481.0" />
+      <point x="3991.92496086554" y="1351.0" />
+      <point x="2155.1433080110887" y="1351.0" />
+      <point x="67.0" y="44.0" />
+    </edge>
+    <edge source="entities.Plumber" target="entities.Plumber" relationship="DEPENDENCY">
+      <point x="-98.25" y="165.0" />
+      <point x="3601.92496086554" y="747.0" />
+      <point x="3549.17496086554" y="747.0" />
+      <point x="3549.17496086554" y="562.0" />
+      <point x="-131.0" y="-0.0" />
+    </edge>
+    <edge source="main.NomadButtonPanel" target="main.Main" relationship="DEPENDENCY">
+      <point x="-89.33333333333326" y="68.0" />
+      <point x="2920.6224746777552" y="1881.0" />
+      <point x="722.1875" y="1881.0" />
+      <point x="722.1875" y="1921.0" />
+      <point x="772.4766413444224" y="1921.0" />
+      <point x="772.4766413444224" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="main.PlumberMoveWindow" relationship="CREATE">
+      <point x="-67.0" y="-68.0" />
+      <point x="3930.17496086554" y="1481.0" />
+      <point x="3991.92496086554" y="1481.0" />
+      <point x="3991.92496086554" y="1351.0" />
+      <point x="2733.1433080110887" y="1351.0" />
+      <point x="67.0" y="44.0" />
+    </edge>
+    <edge source="states.InGame" target="entities.Plumber" relationship="CREATE">
+      <point x="-43.5" y="-56.0" />
+      <point x="4208.518308011089" y="1931.0" />
+      <point x="4136.67496086554" y="1931.0" />
+      <point x="4136.67496086554" y="1891.0" />
+      <point x="4171.92496086554" y="1891.0" />
+      <point x="4171.92496086554" y="829.0" />
+      <point x="3705.17496086554" y="829.0" />
+      <point x="3705.17496086554" y="769.0" />
+      <point x="3732.92496086554" y="769.0" />
+      <point x="32.75" y="165.0" />
+    </edge>
+    <edge source="main.Game" target="main.Controller" relationship="CREATE">
+      <point x="30.5" y="189.0" />
+      <point x="4623.674960865539" y="2675.0" />
+      <point x="4649.174960865539" y="2675.0" />
+      <point x="4649.174960865539" y="2695.0" />
+      <point x="6121.354166666666" y="2695.0" />
+      <point x="6121.354166666666" y="6258.0" />
+      <point x="5855.275547882153" y="6258.0" />
+      <point x="0.0" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberPipeInWindow" target="things.Field" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2021.1433080110887" y="1341.0" />
+      <point x="710.7974355432955" y="1341.0" />
+      <point x="710.7974355432955" y="1471.0" />
+      <point x="-126.00252532224431" y="1471.0" />
+      <point x="-126.00252532224431" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="main.settings" target="main.ImagePanel" relationship="TO_ONE">
+      <point x="0.0" y="-68.0" />
+      <point x="5921.354166666666" y="1471.0" />
+      <point x="5322.354166666666" y="1471.0" />
+      <point x="5322.354166666666" y="1461.0" />
+      <point x="5369.854166666666" y="1461.0" />
+      <point x="61.75" y="44.0" />
+    </edge>
+    <edge source="main.startMenu" target="main.ImagePanel" relationship="TO_ONE">
+      <point x="68.33333333333348" y="-104.0" />
+      <point x="5266.604166666667" y="1881.0" />
+      <point x="5256.854166666666" y="1881.0" />
+      <point x="5256.854166666666" y="1471.0" />
+      <point x="5322.354166666666" y="1471.0" />
+      <point x="5322.354166666666" y="1461.0" />
+      <point x="5369.854166666666" y="1461.0" />
+      <point x="61.75" y="44.0" />
+    </edge>
+    <edge source="things.Pump" target="things.Pump" relationship="TO_MANY">
+      <point x="-107.60000000000002" y="405.0" />
+      <point x="1621.775" y="3763.0" />
+      <point x="1574.875" y="3763.0" />
+      <point x="1574.875" y="3338.0" />
+      <point x="-134.5" y="-0.0" />
+    </edge>
+    <edge source="entities.Plumber" target="main.Game" relationship="DEPENDENCY">
+      <point x="-32.75" y="165.0" />
+      <point x="3667.42496086554" y="769.0" />
+      <point x="3695.17496086554" y="769.0" />
+      <point x="3695.17496086554" y="809.0" />
+      <point x="3852.67496086554" y="809.0" />
+      <point x="3852.67496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="entities.Nomad" target="entities.Player" relationship="GENERALIZATION">
+      <point x="0.0" y="-140.5" />
+      <point x="4171.92496086554" y="345.0" />
+      <point x="3481.7058080110887" y="345.0" />
+      <point x="31.125" y="477.0" />
+    </edge>
+    <edge source="main.Game" target="states.InGame" relationship="CREATE">
+      <point x="0.0" y="-189.0" />
+      <point x="4593.174960865539" y="2233.0" />
+      <point x="4577.004714548821" y="2233.0" />
+      <point x="4577.004714548821" y="2223.0" />
+      <point x="1925.6224746777552" y="2223.0" />
+      <point x="1925.6224746777552" y="2213.0" />
+      <point x="4252.018308011089" y="2213.0" />
+      <point x="0.0" y="56.0" />
+    </edge>
+    <edge source="states.InGame" target="states.InGame" relationship="DEPENDENCY">
+      <point x="-58.0" y="56.0" />
+      <point x="4194.018308011089" y="2133.0" />
+      <point x="4145.018308011089" y="2133.0" />
+      <point x="4145.018308011089" y="2057.0" />
+      <point x="-87.0" y="-0.0" />
+    </edge>
+    <edge source="main.Game" target="main.PlumberButtonPanel" relationship="CREATE">
+      <point x="0.0" y="-189.0" />
+      <point x="4593.174960865539" y="2233.0" />
+      <point x="4577.004714548821" y="2233.0" />
+      <point x="4577.004714548821" y="2203.0" />
+      <point x="3997.17496086554" y="2203.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="things.Cistern" target="things.Cistern" relationship="DEPENDENCY">
+      <point x="-70.875" y="128.5" />
+      <point x="188.4349746777557" y="1804.5" />
+      <point x="144.8099746777557" y="1804.5" />
+      <point x="144.8099746777557" y="1656.0" />
+      <point x="-94.5" y="-0.0" />
+    </edge>
+    <edge source="states.InGame" target="things.Pump" relationship="CREATE">
+      <point x="0.0" y="56.0" />
+      <point x="4252.018308011089" y="2213.0" />
+      <point x="1925.6224746777552" y="2213.0" />
+      <point x="1925.6224746777552" y="2233.0" />
+      <point x="1763.0" y="2233.0" />
+      <point x="33.625" y="-405.0" />
+    </edge>
+    <edge source="main.PlumberMoveWindow" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2599.1433080110887" y="1331.0" />
+      <point x="791.4249608655398" y="1331.0" />
+      <point x="791.4249608655398" y="1451.0" />
+      <point x="772.4766413444224" y="1451.0" />
+      <point x="772.4766413444224" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="states.InGame" target="entities.Player" relationship="DEPENDENCY">
+      <point x="43.5" y="-56.0" />
+      <point x="4295.518308011089" y="1931.0" />
+      <point x="4395.270833333334" y="1931.0" />
+      <point x="4395.270833333334" y="1831.0" />
+      <point x="4309.924960865539" y="1831.0" />
+      <point x="4309.924960865539" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="main.NomadButtonPanel" target="main.NomadPipeInteraction" relationship="DEPENDENCY">
+      <point x="67.0" y="-68.0" />
+      <point x="3076.9558080110887" y="1401.0" />
+      <point x="3561.1922145488197" y="1401.0" />
+      <point x="3561.1922145488197" y="1341.0" />
+      <point x="3471.4558080110887" y="1341.0" />
+      <point x="3471.4558080110887" y="1159.0" />
+      <point x="764.1297145488202" y="1159.0" />
+      <point x="-67.0" y="68.0" />
+    </edge>
+    <edge source="states.InGame" target="things.Spring" relationship="CREATE">
+      <point x="-43.5" y="-56.0" />
+      <point x="4208.518308011089" y="1931.0" />
+      <point x="4136.67496086554" y="1931.0" />
+      <point x="4136.67496086554" y="1891.0" />
+      <point x="538.8099746777559" y="1891.0" />
+      <point x="66.0" y="153.0" />
+    </edge>
+    <edge source="entities.Player" target="entities.Player" relationship="DEPENDENCY">
+      <point x="-93.375" y="477.0" />
+      <point x="3357.2058080110887" y="323.0" />
+      <point x="3306.0808080110887" y="323.0" />
+      <point x="3306.0808080110887" y="-174.0" />
+      <point x="-124.5" y="-0.0" />
+    </edge>
+    <edge source="main.Game" target="main.startMenu" relationship="CREATE">
+      <point x="0.0" y="-189.0" />
+      <point x="4593.174960865539" y="2233.0" />
+      <point x="4577.004714548821" y="2233.0" />
+      <point x="4577.004714548821" y="2203.0" />
+      <point x="5172.645833333334" y="2203.0" />
+      <point x="-25.625" y="104.0" />
+    </edge>
+    <edge source="things.Field" target="main.Round" relationship="REALIZATION">
+      <point x="-97.875" y="-357.0" />
+      <point x="-208.0" y="3805.0" />
+      <point x="-224.0625" y="3805.0" />
+      <point x="-224.0625" y="-672.0" />
+      <point x="1329.6224746777555" y="-672.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="main.restart_menu" target="main.restart_menu" relationship="DEPENDENCY">
+      <point x="-75.375" y="128.5" />
+      <point x="5312.479166666666" y="1804.5" />
+      <point x="5267.354166666666" y="1804.5" />
+      <point x="5267.354166666666" y="1656.0" />
+      <point x="-100.5" y="-0.0" />
+    </edge>
+    <edge source="main.PlumberButtonPanel" target="entities.Player" relationship="DEPENDENCY">
+      <point x="67.0" y="-68.0" />
+      <point x="4064.17496086554" y="1481.0" />
+      <point x="4002.42496086554" y="1481.0" />
+      <point x="4002.42496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="entities.Player" target="things.Pipe" relationship="DEPENDENCY">
+      <point x="-31.125" y="477.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="-288.625" y="375.0" />
+      <point x="-288.625" y="1411.0" />
+      <point x="-272.625" y="1411.0" />
+      <point x="-272.625" y="4563.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="-140.25" y="-801.0" />
+    </edge>
+    <edge source="things.Pipe" target="entities.Player" relationship="DEPENDENCY">
+      <point x="-140.25" y="-801.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="-272.625" y="4563.0" />
+      <point x="-272.625" y="1411.0" />
+      <point x="-288.625" y="1411.0" />
+      <point x="-288.625" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="things.Pipe" target="things.Pump" relationship="CREATE">
+      <point x="46.75" y="-801.0" />
+      <point x="1021.6749608655398" y="4593.0" />
+      <point x="1739.375" y="4593.0" />
+      <point x="1739.375" y="3805.0" />
+      <point x="1783.1750000000002" y="3805.0" />
+      <point x="53.80000000000018" y="405.0" />
+    </edge>
+    <edge source="main.PlumberPickUpWindow" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="3259.955808011089" y="1291.0" />
+      <point x="843.4249608655398" y="1291.0" />
+      <point x="843.4249608655398" y="1421.0" />
+      <point x="-327.0" y="1421.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.startMenu" target="main.ImagePanel" relationship="CREATE">
+      <point x="-68.33333333333348" y="-104.0" />
+      <point x="5129.9375" y="1931.0" />
+      <point x="4913.484935543295" y="1931.0" />
+      <point x="4913.484935543295" y="1481.0" />
+      <point x="5246.354166666666" y="1481.0" />
+      <point x="-61.75" y="44.0" />
+    </edge>
+    <edge source="entities.Plumber" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="-65.5" y="-165.0" />
+      <point x="3634.67496086554" y="355.0" />
+      <point x="3295.5808080110887" y="355.0" />
+      <point x="3295.5808080110887" y="-682.0" />
+      <point x="4371.705808011089" y="-682.0" />
+      <point x="58.5" y="44.0" />
+    </edge>
+    <edge source="main.restart_menu" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="67.0" y="-128.5" />
+      <point x="5454.854166666666" y="1461.0" />
+      <point x="5442.104166666666" y="1461.0" />
+      <point x="5442.104166666666" y="-682.0" />
+      <point x="4371.705808011089" y="-682.0" />
+      <point x="58.5" y="44.0" />
+    </edge>
+    <edge source="main.PlumberMoveWindow" target="main.Game" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2599.1433080110887" y="1331.0" />
+      <point x="791.4249608655398" y="1331.0" />
+      <point x="791.4249608655396" y="1451.0" />
+      <point x="2865.4558080110887" y="1451.0" />
+      <point x="2865.4558080110887" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="main.PlumberPipeInWindow" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2021.1433080110887" y="1341.0" />
+      <point x="710.7974355432955" y="1341.0" />
+      <point x="710.7974355432955" y="1471.0" />
+      <point x="626.3099746777557" y="1471.0" />
+      <point x="626.3099746777557" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="things.Pump" target="main.LoadSave" relationship="DEPENDENCY">
+      <point x="-33.625" y="-405.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="582.3099746777557" y="2871.0" />
+      <point x="582.3099746777557" y="789.0" />
+      <point x="199.9249608655398" y="789.0" />
+      <point x="199.9249608655398" y="-682.0" />
+      <point x="4371.705808011089" y="-682.0" />
+      <point x="58.5" y="44.0" />
+    </edge>
+    <edge source="main.Game" target="main.NomadButtonPanel" relationship="CREATE">
+      <point x="0.0" y="-189.0" />
+      <point x="4593.174960865539" y="2233.0" />
+      <point x="4577.004714548821" y="2233.0" />
+      <point x="4577.004714548821" y="2203.0" />
+      <point x="3925.42496086554" y="2203.0" />
+      <point x="3925.42496086554" y="1931.0" />
+      <point x="3009.9558080110887" y="1931.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="main.PlumberPipeOutWindow" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1371.893308011089" y="1351.0" />
+      <point x="615.5599746777557" y="1351.0" />
+      <point x="615.5599746777557" y="1481.0" />
+      <point x="-338.0" y="1481.0" />
+      <point x="-338.0" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="entities.Nomad" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-85.0" y="140.5" />
+      <point x="4086.92496086554" y="779.0" />
+      <point x="301.4375" y="779.0" />
+      <point x="301.4375" y="819.0" />
+      <point x="1055.2708333333333" y="819.0" />
+      <point x="1055.2708333333333" y="1129.0" />
+      <point x="863.5474355432955" y="1129.0" />
+      <point x="863.5474355432955" y="1391.0" />
+      <point x="742.5599746777557" y="1391.0" />
+      <point x="742.5599746777557" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="main.PlumberMoveWindow" target="things.Pump" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2599.1433080110887" y="1331.0" />
+      <point x="791.4249608655398" y="1331.0" />
+      <point x="791.4249608655398" y="1451.0" />
+      <point x="691.1875" y="1451.0" />
+      <point x="691.1875" y="2871.0" />
+      <point x="641.6875" y="2871.0" />
+      <point x="641.6875" y="2901.0" />
+      <point x="1695.75" y="2901.0" />
+      <point x="-33.625" y="-405.0" />
+    </edge>
+    <edge source="main.PlumberPipeInWindow" target="main.Main" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2021.1433080110887" y="1341.0" />
+      <point x="710.7974355432955" y="1341.0" />
+      <point x="710.7974355432955" y="1471.0" />
+      <point x="772.4766413444224" y="1471.0" />
+      <point x="772.4766413444224" y="2665.0" />
+      <point x="832.1041666666667" y="2665.0" />
+      <point x="832.1041666666667" y="2715.0" />
+      <point x="840.0208333333335" y="2715.0" />
+      <point x="-54.666666666666515" y="-44.0" />
+    </edge>
+    <edge source="main.PlumberPipeInWindow" target="main.Game" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2021.1433080110887" y="1341.0" />
+      <point x="710.7974355432955" y="1341.0" />
+      <point x="710.7974355432957" y="1471.0" />
+      <point x="2843.4558080110887" y="1471.0" />
+      <point x="2843.4558080110887" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="entities.Player" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-31.125" y="477.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="-338.0" y="375.0" />
+      <point x="-338.0" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.Controller" target="entities.Player" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="-297.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-338.0" y="6248.0" />
+      <point x="-338.0" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="main.NomadMoveWindow" target="main.Controller" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="1083.893308011089" y="1321.0" />
+      <point x="801.4249608655398" y="1321.0" />
+      <point x="801.4249608655398" y="1461.0" />
+      <point x="-338.0" y="1461.0" />
+      <point x="-338.0" y="6248.0" />
+      <point x="-327.0" y="6248.0" />
+      <point x="-327.0" y="6268.0" />
+      <point x="5774.94221454882" y="6268.0" />
+      <point x="-80.33333333333348" y="-297.0" />
+    </edge>
+    <edge source="main.PlumberMoveWindow" target="things.Field" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2599.1433080110887" y="1331.0" />
+      <point x="791.4249608655398" y="1331.0" />
+      <point x="791.4249608655398" y="1451.0" />
+      <point x="-126.00252532224431" y="1451.0" />
+      <point x="-126.00252532224431" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="main.NomadPipeOutWindow" target="main.Game" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2310.1433080110887" y="1301.0" />
+      <point x="832.4249608655398" y="1301.0" />
+      <point x="832.4249608655398" y="1441.0" />
+      <point x="2865.4558080110887" y="1441.0" />
+      <point x="2865.4558080110887" y="2203.0" />
+      <point x="2798.17496086554" y="2203.0" />
+      <point x="2798.17496086554" y="2233.0" />
+      <point x="4511.841627532206" y="2233.0" />
+      <point x="-81.33333333333348" y="-189.0" />
+    </edge>
+    <edge source="main.NomadPipeOutWindow" target="things.Field" relationship="DEPENDENCY">
+      <point x="-67.0" y="44.0" />
+      <point x="2310.1433080110887" y="1301.0" />
+      <point x="832.4249608655398" y="1301.0" />
+      <point x="832.4249608655398" y="1441.0" />
+      <point x="96.99747467775569" y="1441.0" />
+      <point x="96.99747467775569" y="3775.0" />
+      <point x="-55.5625" y="3775.0" />
+      <point x="-55.5625" y="3805.0" />
+      <point x="-77.5" y="3805.0" />
+      <point x="32.625" y="-357.0" />
+    </edge>
+    <edge source="main.NomadButtonPanel" target="entities.Player" relationship="DEPENDENCY">
+      <point x="67.0" y="-68.0" />
+      <point x="3076.9558080110887" y="1401.0" />
+      <point x="3561.1922145488197" y="1401.0" />
+      <point x="3561.1922145488197" y="1341.0" />
+      <point x="3841.67496086554" y="1341.0" />
+      <point x="3841.67496086554" y="375.0" />
+      <point x="2792.1433080110887" y="375.0" />
+      <point x="2792.1433080110887" y="345.0" />
+      <point x="3419.4558080110887" y="345.0" />
+      <point x="-31.125" y="477.0" />
+    </edge>
+    <edge source="main.PlumberPipeInteraction" target="things.Pipe" relationship="DEPENDENCY">
+      <point x="-67.0" y="68.0" />
+      <point x="2529.92496086554" y="1009.0" />
+      <point x="964.393308011089" y="1009.0" />
+      <point x="964.393308011089" y="1139.0" />
+      <point x="134.3099746777557" y="1139.0" />
+      <point x="134.3099746777557" y="4563.0" />
+      <point x="119.17496086553979" y="4563.0" />
+      <point x="119.17496086553979" y="4593.0" />
+      <point x="834.6749608655398" y="4593.0" />
+      <point x="-140.25" y="-801.0" />
+    </edge>
+    <edge source="main.NomadMoveWindow" target="main.NomadPipeInteraction" relationship="CREATE">
+      <point x="-67.0" y="-44.0" />
+      <point x="1083.893308011089" y="1119.0" />
+      <point x="898.1297145488202" y="1119.0" />
+      <point x="67.0" y="68.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.30517578125" showDependencies="true" x="3028.216" y="1114.3104" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
