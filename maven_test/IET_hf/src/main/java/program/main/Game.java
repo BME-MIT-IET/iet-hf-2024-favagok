@@ -189,7 +189,7 @@ public class Game implements Runnable {
         long lastCheck = System.currentTimeMillis();
         double lamdaU = 0;
         double lamdaF = 0;
-        while (true) {
+        while (!Controller.GameOver) {
             long currentTime = System.nanoTime();
 
             lamdaU += (currentTime - previousTime) / timePerUpdata;

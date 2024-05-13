@@ -36,7 +36,7 @@ public class LoadSave {
      */
     public static BufferedImage getFile(String fileName) {
         BufferedImage img = null;
-        InputStream is = LoadSave.class.getResourceAsStream("resources/" + fileName);
+        InputStream is = LoadSave.class.getResourceAsStream("/" + fileName);
         try {
             if(is!=null)img = ImageIO.read(is);
             /**megprobál kivételt elkapni IO-ból**/
