@@ -17,7 +17,7 @@ public class UIChangePipeOut {
     private PlumberPipeOutWindow ppWindow = new PlumberPipeOutWindow(3);
     @When("click on change pipe out")
     public void click_on_change_pipe_out() {
-        System.out.println("changing pipe out");
+        System.out.println("test started");
         ActionEvent event = new ActionEvent(pbPanel.getChangePipeOut(), ActionEvent.ACTION_PERFORMED, "change pipe out");
         pbPanel.actionPerformed(event);
     }

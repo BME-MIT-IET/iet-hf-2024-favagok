@@ -96,4 +96,12 @@ public class PlumberPipeInteraction implements ActionListener {
     }
 
     public Object getDestroy() {return destroy;}
+
+    public Object getRepair(){
+        return repair;
+    }
+
+    public Object getEnd() {
+        return end;
+    }
 }

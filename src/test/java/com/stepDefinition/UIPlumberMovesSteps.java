@@ -21,6 +21,8 @@ import static org.junit.Assert.assertEquals;
 public class UIPlumberMovesSteps {
     private PlumberButtonPanel pbPanel = new PlumberButtonPanel();
     private PlumberMoveWindow pmWindow = new PlumberMoveWindow(3);
+
+    private PlumberPipeInteraction ppInteraction = new PlumberPipeInteraction();
     @When("click on move button")
     public void click_on_move_button() {
         System.out.println("test started");
@@ -35,8 +37,8 @@ public class UIPlumberMovesSteps {
     @When("click on end turn")
     public void click_on_end_turn() {
         System.out.println("test started");
-        ActionEvent endButtonEvent = new ActionEvent(this, ActionEvent.ACTION_PERFORMED, "end");
-        new PlumberPipeInteraction().actionPerformed(endButtonEvent);
+        ActionEvent endButtonEvent = new ActionEvent(ppInteraction.getEnd(), ActionEvent.ACTION_PERFORMED, "end");
+        ppInteraction.actionPerformed(endButtonEvent);
     }
     @Then("check new position")
     public void check_new_position() {

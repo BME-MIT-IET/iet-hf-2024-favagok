@@ -18,7 +18,7 @@ public class UIDestroyPipeSteps {
 
     @When("click on destroy pipe")
     public void click_on_destroy_pipe() {
-        System.out.println("destroying pipe");
+        System.out.println("test started");
         ActionEvent event = new ActionEvent(ppInteraction.getDestroy(), ActionEvent.ACTION_PERFORMED, "destroy");
         ppInteraction.actionPerformed(event);
     }

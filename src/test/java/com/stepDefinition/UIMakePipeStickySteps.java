@@ -2,7 +2,6 @@ package com.stepDefinition;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import program.main.Pipe;
 import program.main.PlumberPipeInteraction;
 
 import static org.junit.Assert.assertEquals;
@@ -11,7 +10,7 @@ import static program.main.Main.game;
 
 import java.awt.event.ActionEvent;
 
-public class UIMakePipeStickSteps {
+public class UIMakePipeStickySteps {
 
     private PlumberPipeInteraction ppInteraction = new PlumberPipeInteraction();
     @When("click on make sticky")

@@ -82,4 +82,12 @@ public class NomadPipeInteraction implements ActionListener {
     public static void setendturn(boolean temp){
         endturn = temp;
     }
+
+    public Object getSlippery() {
+        return slippery;
+    }
+
+    public Object getEnd() {
+        return end;
+    }
 }
