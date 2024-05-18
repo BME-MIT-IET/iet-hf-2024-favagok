@@ -30,7 +30,7 @@ public class UIChangePipeOut {
     @Then("check if pipe out has changed")
     public void check_if_the_pipe_out_has_changed() {
         System.out.println("test started");
-        assertEquals(game.Fields().get(1).getPipeOut(), game.Pipes().get(3));
+        assertEquals(game.Fields().get(3).getPipeOut(), game.Pipes().get(0));
     }
 
 }
