@@ -200,5 +200,7 @@ public class startMenu extends JFrame {
         panel.add(settingsButton);
     }
 
-
+    public JButton getStartButton(){
+        return startButton;
+    }
 }
