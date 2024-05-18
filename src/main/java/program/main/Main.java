@@ -24,9 +24,8 @@ public class Main {
 
     /**
      * A játékban véletlenszerű események is szerpelnek, ezeket lehet véletlenszerure,
-     * vagy determinisztikusra állítani  a random booleannal
+     * vagy determinisztikusra állítani a random booleannal
      */
-
     static boolean random = true;
 
     public static void main(String[] args) {
