@@ -178,6 +178,7 @@ public class Game implements Runnable {
         return pipes;
     }
 
+
     /**
      * Futtatja a játék fő ciklusát.
      */

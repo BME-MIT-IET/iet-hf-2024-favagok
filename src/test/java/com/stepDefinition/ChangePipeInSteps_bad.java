@@ -6,13 +6,8 @@ import io.cucumber.java.en.When;
 
 import program.main.*;
 import static program.main.Main.game;
-import static program.main.State.Working;
-import static program.main.State.Broken;
-import static program.main.Main.game;
-import static program.main.State.Working;
-import static program.main.State.Broken;
 import static org.junit.Assert.assertEquals;
-public class ChangePipeInSteps {
+public class ChangePipeInSteps_bad {
     @Given("initialize the game")
     public void initialize_the_game() {
         System.out.println("test started");
