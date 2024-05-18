@@ -9,10 +9,10 @@ import java.util.List;
 import java.time.LocalDateTime;
 import java.util.Random;
 
-
+import static program.main.Main.game;
 
 public class Pipe extends Field implements Serializable {
-    private static Game game = Main.game;
+
     int x1;
     int y1;
     int x2;
