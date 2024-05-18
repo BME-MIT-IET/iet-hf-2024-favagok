@@ -94,4 +94,6 @@ public class PlumberPipeInteraction implements ActionListener {
     public Object getSticky() {
         return sticky;
     }
+
+    public Object getDestroy() {return destroy;}
 }

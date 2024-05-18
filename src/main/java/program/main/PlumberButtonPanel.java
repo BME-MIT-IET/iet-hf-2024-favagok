@@ -148,4 +148,9 @@ public class PlumberButtonPanel extends JPanel implements ActionListener {
     public Object getpickUpPump() {
         return pickUpPump;
     }
+
+    public Object getChangePipeIn() {return changePipeIn;}
+
+    public Object getChangePipeOut() { return changePipeOut;}
+
 }

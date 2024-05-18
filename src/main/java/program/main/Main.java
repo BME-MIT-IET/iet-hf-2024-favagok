@@ -16,11 +16,13 @@ import java.util.Scanner;
  */
 public class Main {
 
+
     public static Game game = new Game();
     /**
      * a cmd ArrayListben tároljuk el a konzolról beérkezett parancsokat
      */
     static ArrayList<String> cmds = new ArrayList<>();
+
 
     /**
      * A játékban véletlenszerű események is szerpelnek, ezeket lehet véletlenszerure,
