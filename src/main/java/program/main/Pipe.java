@@ -407,7 +407,7 @@ public class Pipe extends Field implements Serializable {
      *
      * @return
      */
-    public ArrayList<Pump> getConnectedPipes() {
+    public ArrayList<Pipe> getConnectedPipes() {
 
         throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getConnectedPipes()");
     }
