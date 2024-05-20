@@ -36,7 +36,7 @@ public class Controller {
      * setRounds
      * Változtatja a roundLeft adattag értékét -1 el
      */
-    public static void setRounds_min1() {
+    public static void decrementRounds() {
         roundsLeft--;
     }
 
@@ -210,7 +210,7 @@ public class Controller {
          currentTurnIsNomad = false;
         Main.game.getGameWindow().getNomadButtonPanel().setVisible(false);
         Main.game.getGameWindow().getPlumberButtonPanel().setVisible(true);
-        setRounds_min1();
+        decrementRounds();
 
 
 
