@@ -140,4 +140,17 @@ public class PlumberButtonPanel extends JPanel implements ActionListener {
         }
         Main.game.gamePanel.repaint();
     }
+
+    public Object getpickupnewpipe() {
+        return pickupnewpipe;
+    }
+
+    public Object getpickUpPump() {
+        return pickUpPump;
+    }
+
+    public Object getChangePipeIn() {return changePipeIn;}
+
+    public Object getChangePipeOut() { return changePipeOut;}
+
 }
