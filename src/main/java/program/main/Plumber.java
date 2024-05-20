@@ -35,8 +35,6 @@ public class Plumber extends Player implements Serializable {
         if (this.getCooldown() <= 0) {
             if (this.getPosition().getConnectedPipes().contains(f) || this.getPosition().equals(f)) {
                 f.repair();
-                //System.out.println("SUCCESS - Plumber.repair()");
-                // this.done = true;
                 this.cooldown = Controller.getNomadCoolDown();
             }
         }
@@ -60,14 +58,12 @@ public class Plumber extends Player implements Serializable {
                     if (!egyezik) {
                         Pump p = new Pump("pump" + counter, LoadSave.PUMP_WORKING_EMPTY);
                         this.setPumpInPocket(p);
-                        //this.done = true;
-                        //System.out.println("SUCCESS - Plumber.pickUpPump()");
                         break;
                     }
                 }
             }
         } catch (Exception e) {
-            //System.out.println();
+        
         }
     }
 
@@ -81,11 +77,7 @@ public class Plumber extends Player implements Serializable {
             this.setPipeInPocket(p);
             this.getPosition().removePipe(p);
             p.pickedUp(this);
-            //this.done = true;
-            //System.out.println("SUCCESS - Plumber.pickUpPipe()");
-        } else {
-            //System.out.println("FAILED - The pipe is not connected to the pump!");
-        }
+        } 
     }
 
     /**
@@ -125,14 +117,8 @@ public class Plumber extends Player implements Serializable {
             if (this.getPosition().getConnectedPipes().contains(p)) {
                 p.placePump(this.getPumpInPocket());
                 this.setPumpInPocket(null);
-                //this.done = true;
-                //System.out.println("SUCCESS - Plumber.placePump()");
-            } else {
-                //System.out.println("FAILED - The pipe is not connected to the pump!");
-            }
-        } else {
-            //System.out.println("FAILED - There is no pump in the pocket!");
-        }
+            }; 
+        }; 
     }
 
     /**
@@ -143,8 +129,6 @@ public class Plumber extends Player implements Serializable {
             this.getPosition().connectPipe(this.getPipeInPocket());
             this.getPipeInPocket().placedDown();
             this.setPipeInPocket(null);
-            //this.done = true;
-            //System.out.println("SUCCESS - Plumber.placePipe()");
         }
     }
 
@@ -155,7 +139,6 @@ public class Plumber extends Player implements Serializable {
      */
     public void setPipeInPocket(Pipe p) {
         pipeInPocket = p;
-        //System.out.println("SUCCESS - Plumber.setPipeInPocket()");
     }
 
     /**
@@ -165,7 +148,6 @@ public class Plumber extends Player implements Serializable {
      */
     public void setPumpInPocket(Pump pump) {
         pumpInPocket = pump;
-        //System.out.println("SUCCESS - Plumber.setPumpInPocket()");
     }
 
     /**
@@ -175,9 +157,6 @@ public class Plumber extends Player implements Serializable {
 
         this.decreaseCooldown();
         this.decreaseStuckTimeLeft();
-        //System.out.println("SUCCESS - Plumber.turn()");
-
-
     }
 
     /**
@@ -186,7 +165,6 @@ public class Plumber extends Player implements Serializable {
      * @return
      */
     public Pump getPumpInPocket() {
-        //System.out.println("SUCCESS - Plumber.getPumpInPocket()");
         return pumpInPocket;
     }
 
@@ -196,7 +174,6 @@ public class Plumber extends Player implements Serializable {
      * @return
      */
     public Pipe getPipeInPocket() {
-        //System.out.println("SUCCESS - Plumber.getPipeInPocket()");
         return pipeInPocket;
     }
 
