@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE RootStep>
-<RootStep id="_0" indentation="0" linelength="160" name="iet-hf" signature="9FE48897F2215DD5F90E05BFE98AE5F612A3F74D" version="7.1.3">
+<RootStep id="_0" indentation="0" linelength="160" name="iet-hf" signature="878E30AFE936AB774C6266171686F68DE244F65F" version="7.1.3">
 <include>qfs.qft</include>
 <TestSet id="_4S" name="Application">
 <SetupSequence id="_6" name="Launch Main">
@@ -951,6 +951,31 @@ E=?x)K\^;yo-/!Y_Bo]1!1GNCg#loa,Y?F'q"[D[rZl)1asXC{{#6c8Pypf_wu||}!EksmCSFQ6$mlgx
 ?B~u'.#Sl6TH^ov$N'ts7qu5W.qe6:dQNbo*{?,`(E</webp>
 </ImageNode>
 </CheckImageStep>
+</TestStep>
+</TestCase>
+<TestCase id="_8E" name="Story window">
+<TestStep id="_4p" name="Check button">
+<MouseEventStep clicks="1" client="$(client)" component="buttonStory" event="MOUSE_MPRC" id="_4q" modifiers="16"/>
+</TestStep>
+<TestStep id="_8Y" name="Check texts">
+<CheckStringStep client="$(client)" component="frameStory" id="_8a">
+<text>Story</text>
+</CheckStringStep>
+<CheckStringStep client="$(client)" component="frameStory.text" disabled="true" id="_8b">
+<text>A drukmákori sivatagon át bonyolult cs&#337;rendszer szállítja a vizet a hegyi forrásokból a sivatagon túl elterül&#337; városok ciszternáiba. A cs&#337;rendszer egyszer&#369;, elágazás nélküli csövekb&#337;l és a csövekhez csatlakozó aktív elemekb&#337;l (forrás, ciszterna, napelemmel m&#369;köd&#337; vízátemel&#337; pumpa stb.) áll. Egy pumpa több (de a pumpára jellemz&#337; véges számú) csövet is összeköthet, és minden pumpán külön-külön állítható, hogy éppen melyik belekötött cs&#337;b&#337;l melyik másik cs&#337;be pumpáljon, azonban egyszerre csak egy bemenete és egy kimenete lehet. A többi rákötött cs&#337; eközben el van zárva. A pumpák véletlen id&#337;közönként el tudnak romlani, ilyenkor megsz&#369;nik az adott pumpánál a vízáramlás. A pumpák mindegyike rendelkezik egy víztartállyal, amit a víz átemelése közben használ átmeneti tárolóként. A pumpa csak akkor tud vizet pumpálni egy cs&#337;be, ha a cs&#337; szabad kapacitása ezt lehet&#337;vé teszi.
+
+A cs&#337;hálózat b&#337;víthet&#337;, változtatható. A csövek kell&#337;en rugalmasak ahhoz, hogy az egyik végüket lecsatlakoztatva egy másik aktív elemhez elvihet&#337;k és ott felcsatlakoztathatók legyenek. A ciszternáknál folyamatosan készülnek az új csövek, amelyek egyik vége a ciszternához kapcsolódik, a másik azonban szabad. A szabad vég&#369; csövekb&#337;l a cs&#337;be betáplált víz a homokba folyik.
+
+A cs&#337;hálózatot a szerel&#337;k tartják karban. &#336;k javítják meg az elromlott pumpákat, &#337;k állítják át a pumpákat, hogy mindig a lehet&#337; legtöbb víz tudjon áthaladni a hálózaton, és ha egy cs&#337; kilyukad, az &#337; dolguk a cs&#337; megfoltozása is. A kilyukadt csövekb&#337;l a víz kifolyik, a csövek végén lév&#337; pumpához már nem jut bel&#337;le. A szerel&#337;k dolga a ciszternáknál lév&#337; szabad csövekkel a hálózat kapacitásának növelése. A szerel&#337;k a ciszternáknál magukhoz tudnak venni új pumpát is, amit egy cs&#337; közepén tudnak elhelyezni. A csövet ehhez ketté kell vágni, és a két végét a pumpához kell csatlakoztatni.
+
+A hálózaton élnek a nomád szabot&#337;rök is, akik a pumpákat tudják átállítani és a csöveket szokták kilyukasztani.
+
+Mivel a sivatag veszélyes hely, a szerel&#337;k és a szabot&#337;rök csak a cs&#337;hálózaton haladhatnak. A pumpáknál kikerülhetik egymást, de a csöveken már nem tudnak elmenni egymás mellett, egy csövön egyszerre csak egy ember állhat.
+
+A játékot a két csapat legalább 2-2 játékossal játssza. A szabot&#337;rök dolga, hogy minél több víz folyjon el a lyukakon, a szerel&#337;k pedig azon dolgoznak, hogy minél több víz jusson a ciszternákba. Az a csapat nyer, amelyik a játék végére több vizet szerez.
+</text>
+</CheckStringStep>
+<WindowEventStep client="$(client)" component="frameStory" event="WINDOW_CLOSING" id="_8c"/>
 </TestStep>
 </TestCase>
 <CleanupSequence id="_4U" name="Stop Main">
