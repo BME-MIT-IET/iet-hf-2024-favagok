@@ -90,4 +90,18 @@ public class PlumberPipeInteraction implements ActionListener {
     public static void setendturn(boolean temp){
         endturn = temp;
     }
+
+    public Object getSticky() {
+        return sticky;
+    }
+
+    public Object getDestroy() {return destroy;}
+
+    public Object getRepair(){
+        return repair;
+    }
+
+    public Object getEnd() {
+        return end;
+    }
 }

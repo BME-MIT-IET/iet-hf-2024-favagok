@@ -102,7 +102,7 @@ public class PlumberButtonPanel extends JPanel implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (Controller.CurrentTurnIsNomad) {
+        if (Controller.currentTurnIsNomad) {
             //this.setVisible(false);
             return;
         } else {
@@ -140,4 +140,17 @@ public class PlumberButtonPanel extends JPanel implements ActionListener {
         }
         Main.game.gamePanel.repaint();
     }
+
+    public Object getpickupnewpipe() {
+        return pickupnewpipe;
+    }
+
+    public Object getpickUpPump() {
+        return pickUpPump;
+    }
+
+    public Object getChangePipeIn() {return changePipeIn;}
+
+    public Object getChangePipeOut() { return changePipeOut;}
+
 }
