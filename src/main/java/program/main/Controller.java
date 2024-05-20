@@ -1,6 +1,5 @@
 package program.main;
 
-
 import java.util.Random;
 import static program.main.Main.game;
 import static program.main.State.Working;
@@ -11,7 +10,7 @@ public class Controller {
      * attributumok
      */
 
-    private static int CoolDown;
+    private static int coolDown;
 
     private static int roundsLeft = 10;
     private static int plumberCoolDown;
@@ -22,12 +21,12 @@ public class Controller {
 
     private static Random rand;
     private static int index;
-    static Nomad CurrentNomad;
-    static Plumber CurrentPlumber;
+    static Nomad currentNomad;
+    static Plumber currentPlumber;
 
-    static boolean CurrentTurnIsNomad = false;
+    static boolean  currentTurnIsNomad = false;
 
-    static boolean GameOver = false;
+    static boolean gameOver = false;
 
 
     /**functions
@@ -46,7 +45,12 @@ public class Controller {
      *
      * @param i Az új hátralévő körök száma.
      */
-    public static void setRounds(int i){roundsLeft=i;}
+    public static void setRounds(int i){
+        if (i < 0){
+            throw new IllegalArgumentException("Round count cannot be negative");
+        }
+        roundsLeft = i;
+    }
 
     /**
      * Visszaadja a jelenlegi vízszerelő játékost.
@@ -54,7 +58,7 @@ public class Controller {
      * @return A jelenlegi vízszerelő játékos.
      */
     public static Plumber getCurrentPlumber() {
-        return CurrentPlumber;
+        return currentPlumber;
     }
 
     /**
@@ -63,7 +67,7 @@ public class Controller {
      * @return A jelenlegi nomád játékos.
      */
     public static Nomad getCurrentNomad() {
-        return CurrentNomad;
+        return currentNomad;
     }
 
     /**
@@ -86,7 +90,7 @@ public class Controller {
      */
     public static int getCoolDown() {
         // System.out.println("SUCCESS - Controller.getPlumberCoolDown()");
-        return CoolDown;
+        return coolDown;
     }
 
     /**
@@ -97,7 +101,7 @@ public class Controller {
      */
     public static void setCoolDown(int value) {
         //System.out.println("SUCCESS - Controller.setNomadCoolDown()");
-        CoolDown = value;
+        coolDown = value;
     }
 
     /**
@@ -108,7 +112,7 @@ public class Controller {
      */
     public static int getNomadCoolDown() {
         // System.out.println("SUCCESS - Controller.getNomadCoolDown()");
-        return CoolDown;
+        return coolDown;
     }
 
     /**
@@ -116,8 +120,8 @@ public class Controller {
      *
      * @return A jelenlegi nomád játékos.
      */
-    public Nomad CurrentNomadTurn() {
-        return CurrentNomad;
+    public Nomad currentNomadTurn() {
+        return currentNomad;
     }
 
     /**
@@ -125,8 +129,8 @@ public class Controller {
      *
      * @return A jelenlegi vízszerelő játékos.
      */
-    public Plumber CurrentPlumberTurn() {
-        return CurrentPlumber;
+    public Plumber currentPlumberTurn() {
+        return currentPlumber;
     }
 
     /**
@@ -135,7 +139,7 @@ public class Controller {
      */
     public void turn() {
         if (getRounds() == 0){
-            GameOver = true;
+            gameOver = true;
             return;
         }
         //System.out.println("lefut a turn");
@@ -145,10 +149,10 @@ public class Controller {
             //System.out.println("plumber size: " + game.Plumbers().size());
             game.Nomads().get(i).setMoved(false);
             //System.out.println("plumber");
-            CurrentPlumber = game.Plumbers().get(i);
+            currentPlumber = game.Plumbers().get(i);
             while (!game.plumberButtonPanel.getendturn()) {
-                CurrentPlumber = game.Plumbers().get(i);
-                CurrentPlumber.turn();
+                currentPlumber = game.Plumbers().get(i);
+                currentPlumber.turn();
             }
             Main.game.gamePanel.repaint();
             game.Plumbers().get(i).setMoved(false);
@@ -171,17 +175,17 @@ public class Controller {
             //System.out.println("nomad : " + nomadPoints);
 
         }
-        CurrentTurnIsNomad = true;
+         currentTurnIsNomad = true;
         Main.game.getGameWindow().getPlumberButtonPanel().setVisible(false);
         Main.game.getGameWindow().getNomadButtonPanel().setVisible(true);
 
 
         for (int i = 0; i < game.Nomads().size(); i++) {
             game.Nomads().get(i).setMoved(false);
-            CurrentNomad = game.Nomads().get(i);
+            currentNomad = game.Nomads().get(i);
             while (!game.nomadButtonPanel.getendturn()) {
-                CurrentNomad = game.Nomads().get(i);
-                CurrentPlumber.turn();
+                currentNomad = game.Nomads().get(i);
+                currentPlumber.turn();
             }
             Main.game.gamePanel.repaint();
             game.Nomads().get(i).setMoved(false);
@@ -203,7 +207,7 @@ public class Controller {
             //.out.println("szerelo : " + plumberPoints);
             //System.out.println("nomad : " + nomadPoints);
         }
-        CurrentTurnIsNomad = false;
+         currentTurnIsNomad = false;
         Main.game.getGameWindow().getNomadButtonPanel().setVisible(false);
         Main.game.getGameWindow().getPlumberButtonPanel().setVisible(true);
         setRounds_min1();
@@ -276,7 +280,7 @@ public class Controller {
     }
 
     public static boolean getCurrentTurnIsNomad() {
-        return CurrentTurnIsNomad;
+        return  currentTurnIsNomad;
     }
 
     public static void setPlumberPoints(int plumberPoints) {
