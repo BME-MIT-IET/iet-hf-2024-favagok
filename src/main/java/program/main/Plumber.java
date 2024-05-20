@@ -96,8 +96,6 @@ public class Plumber extends Player implements Serializable {
                     Pipe pipe = new Pipe(this.getPosition(), this, "pipe" + counter);
                     game.Pipes().add(pipe);
                     this.setPipeInPocket(pipe);
-                    //this.done = true;
-                    //System.out.println("SUCCESS - Plumber.pickUpNewPump()");
                     break;
                 }
             }
