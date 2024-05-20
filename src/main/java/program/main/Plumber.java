@@ -1,6 +1,4 @@
 package program.main;
-
-import java.awt.*;
 import java.io.Serializable;
 
 public class Plumber extends Player implements Serializable {
