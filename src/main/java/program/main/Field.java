@@ -5,6 +5,8 @@ import java.awt.image.BufferedImage;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+
+
 /**
  * A pálya ezekből az elemekből áll. Ez egy absztrakt osztály.
  */
