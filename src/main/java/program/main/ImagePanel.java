@@ -11,7 +11,7 @@ public class ImagePanel extends JPanel {
     /**
      * attributumok
      */
-    private BufferedImage image;
+    private transient BufferedImage image;
 
     public ImagePanel(BufferedImage f) {
 

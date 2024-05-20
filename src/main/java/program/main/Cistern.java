@@ -1,9 +1,6 @@
 package program.main;
 
-import java.awt.*;
-import java.io.Serializable;
-
-public class Cistern extends Pump implements Serializable {
+public class Cistern extends Pump {
 
     /**
      * Meagdja, hogy a ciszternában van-e pumpa.

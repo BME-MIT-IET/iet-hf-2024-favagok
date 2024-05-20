@@ -71,6 +71,7 @@ public class GamePanel extends JPanel {
     /**
      * Elemek kirajzolása
      */
+    @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         try {

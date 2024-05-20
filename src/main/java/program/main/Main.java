@@ -1,14 +1,6 @@
 package program.main;
-
-import javax.imageio.*;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.Scanner;
+
 
 /**
  * Ez a Main class csak a teszetléshez készült, annak adja a keretet,
