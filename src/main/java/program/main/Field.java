@@ -120,8 +120,7 @@ public abstract class Field implements Round, Serializable {
     /**
      * A víz áramlását valósítja meg.
      */
-    public void waterFlowing() {
-    }
+    public abstract void waterFlowing();
 
     /**
      * Beállítja, hogy a ciszternában van-e pumpa a newPump adattag értékének változtatásával.
