@@ -137,9 +137,9 @@ public abstract class Field implements Round, Serializable {
      */
     public abstract boolean getNewPump();
 
-    public abstract ArrayList getConnectedPipes();
+    public abstract ArrayList<Pipe> getConnectedPipes();
 
-    public abstract ArrayList getConnectedPumps();
+    public abstract ArrayList<Pump> getConnectedPumps();
 
     /**
      * A field állapotának lekérésére szolgál
