@@ -17,17 +17,14 @@ public abstract class Field implements Round, Serializable {
 
     public void SetName(String s) {
         ID = s;
-        //System.out.println("SUCCESS - Field.SetName()");
     }
 
     public String GetName() {
-        //System.out.println("SUCCESS - Field.GetName()");
         return ID;
     }
 
     @Override
     public String toString() {
-        //System.out.println("SUCCESS - Field.toString()");
         return (ID + " Field");
     }
 
@@ -124,7 +121,6 @@ public abstract class Field implements Round, Serializable {
      * A víz áramlását valósítja meg.
      */
     public void waterFlowing() {
-        //System.out.println("SUCCESS - Field.waterFlowing");
     }
 
     /**
@@ -151,7 +147,6 @@ public abstract class Field implements Round, Serializable {
      * @param state
      */
     public void setState(State state) {
-        //System.out.println("SUCCESS - Field.setState()");
         this.state = state;
     }
 
@@ -161,7 +156,6 @@ public abstract class Field implements Round, Serializable {
      * @return
      */
     public State getState() {
-        //System.out.println("SUCCESS - Field.getState()");
         return state;
     }
 
