@@ -3,9 +3,7 @@ package program.main;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.Serializable;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class Pump extends Field implements Serializable {
@@ -277,22 +275,6 @@ public class Pump extends Field implements Serializable {
                 p.otherEnd(this).addNeighour(this);
             }
         }
-
-
-        /*if (connectedPipes.contains(p)) {
-            //System.out.println("Parameter Pipe is already connected!");
-            if (!(neighbours.contains(p.otherEnd(this))) && p.otherEnd(this) != null) {
-                neighbours.add(p.otherEnd(this));
-                p.otherEnd(this).neighbours.add(this);
-                return;
-            }
-        }*/
-
-        //connectedPipes.add(p);
-        /*if (p.otherEnd(this) != null) {
-            neighbours.add(p.otherEnd(this));
-        }*/
-        //System.out.println("SUCCESS - Pump.connectPipe()");
         return;
     }
 

@@ -1,7 +1,6 @@
 package program.main;
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,6 +14,7 @@ public class NomadButtonPanel extends JPanel implements ActionListener {
     JButton changePipeOut = new JButton("change pipe out");
 
     public int lettersize = 12;
+    public String font = "Showcard Gothic";
 
     /**
      * Az osztály konstruktora.
@@ -28,21 +28,21 @@ public class NomadButtonPanel extends JPanel implements ActionListener {
         move.addActionListener(this);
         move.setVisible(true);
         move.setBackground(new Color(240, 204, 125));
-        move.setFont(new Font("Showcard Gothic", Font.PLAIN, 12));
+        move.setFont(new Font(font, Font.PLAIN, 12));
 
         this.add(changePipeIn);
         changePipeIn.addActionListener(this);
         changePipeIn.setVisible(true);
         changePipeIn.addActionListener(this);
         changePipeIn.setBackground(new Color(240, 204, 125));
-        changePipeIn.setFont(new Font("Showcard Gothic", Font.PLAIN, 12));
+        changePipeIn.setFont(new Font(font, Font.PLAIN, 12));
 
         this.add(changePipeOut);
         changePipeOut.addActionListener(this);
         changePipeOut.setVisible(true);
         changePipeOut.addActionListener(this);
         changePipeOut.setBackground(new Color(240, 204, 125));
-        changePipeOut.setFont(new Font("Showcard Gothic", Font.PLAIN, 12));
+        changePipeOut.setFont(new Font(font, Font.PLAIN, 12));
     }
 
     /**
@@ -51,8 +51,8 @@ public class NomadButtonPanel extends JPanel implements ActionListener {
      * @return
      */
     public boolean getendturn() {
-        boolean end = NomadPipeInteraction.getendturn();
-        return end;
+
+        return NomadPipeInteraction.getendturn();
     }
 
     /**
@@ -72,10 +72,8 @@ public class NomadButtonPanel extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (!Controller.CurrentTurnIsNomad) {
-            //this.setVisible(false);
             return;
         } else {
-            // this.setVisible(true);
         }
 
         if (e.getSource() == move) {

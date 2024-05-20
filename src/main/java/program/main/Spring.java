@@ -1,10 +1,7 @@
 package program.main;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Random;
 
-public class Spring extends Pump implements Serializable {
+public class Spring extends Pump {
 
     /**
      * Forras konstruktora

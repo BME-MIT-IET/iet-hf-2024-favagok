@@ -66,6 +66,5 @@ public class NomadMoveWindow extends JPanel implements ActionListener {
             }
         }
         frame.dispose();
-        NomadPipeInteraction ppi = new NomadPipeInteraction();
     }
 }

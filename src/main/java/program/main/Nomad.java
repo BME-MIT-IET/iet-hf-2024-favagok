@@ -1,10 +1,6 @@
 package program.main;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.Serializable;
-
-public class Nomad extends Player implements Serializable {
+public class Nomad extends Player {
 
     /**
      * Nomád konstruktora.
@@ -98,8 +94,6 @@ public class Nomad extends Player implements Serializable {
                 p.SetTurnNotToSlippery(5);
                 cooldown = Controller.getNomadCoolDown();
                 //System.out.println("SUCCESS - Nomad.makeSlippery()");
-
-                //  this.done = true;
             }
         }
     }
