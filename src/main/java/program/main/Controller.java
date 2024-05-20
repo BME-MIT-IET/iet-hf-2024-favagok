@@ -142,13 +142,9 @@ public class Controller {
             gameOver = true;
             return;
         }
-        //System.out.println("lefut a turn");
-        //System.out.println(game.plumberButtonPanel.getendturn());
         Main.game.getGameWindow().getPlumberButtonPanel().setVisible(true);
         for (int i = 0; i < game.Plumbers().size(); i++) {
-            //System.out.println("plumber size: " + game.Plumbers().size());
             game.Nomads().get(i).setMoved(false);
-            //System.out.println("plumber");
             currentPlumber = game.Plumbers().get(i);
             while (!game.plumberButtonPanel.getendturn()) {
                 currentPlumber = game.Plumbers().get(i);
@@ -157,22 +153,15 @@ public class Controller {
             Main.game.gamePanel.repaint();
             game.Plumbers().get(i).setMoved(false);
 
-            //System.out.println("plumber ended");
             Main.game.gamePanel.repaint();
             for (int j = 0; j < game.Pipes().size(); j++) {
                 game.Pipes().get(j).turn();
             }
-            //System.out.println("minden pipe turn");
             for (int k = 0; k < game.Fields().size(); k++) {
                 game.Fields().get(k).turn();
             }
-            //System.out.println("minden fiels turn");
 
             game.plumberButtonPanel.resetTurn(false);
-            //System.out.println("plumber turn reset");
-            //System.out.println(game.plumberButtonPanel.getendturn());
-            //System.out.println("szerelo : " + plumberPoints);
-            //System.out.println("nomad : " + nomadPoints);
 
         }
          currentTurnIsNomad = true;
@@ -190,31 +179,19 @@ public class Controller {
             Main.game.gamePanel.repaint();
             game.Nomads().get(i).setMoved(false);
 
-            //System.out.println("plumber ended");
             Main.game.gamePanel.repaint();
             for (int k = 0; k < game.Pipes().size(); k++) {
                 game.Pipes().get(k).turn();
             }
-            //System.out.println("minden pipe turn");
             for (int j = 0; j < game.Fields().size(); j++) {
                 game.Fields().get(j).turn();
             }
-            //System.out.println("minden fiels turn");
-
             game.nomadButtonPanel.resetTurn(false);
-            //System.out.println("nomad turn reset");
-            //System.out.println(game.nomadButtonPanel.getendturn());
-            //.out.println("szerelo : " + plumberPoints);
-            //System.out.println("nomad : " + nomadPoints);
         }
          currentTurnIsNomad = false;
         Main.game.getGameWindow().getNomadButtonPanel().setVisible(false);
         Main.game.getGameWindow().getPlumberButtonPanel().setVisible(true);
         decrementRounds();
-
-
-
-
     }
 
     /**
