@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE RootStep>
-<RootStep id="_0" indentation="0" linelength="160" name="iet-hf" signature="B6D6B69801F355EE1AF409DD688AAB5ACC9634AF" version="7.1.3">
+<RootStep id="_0" indentation="0" linelength="160" name="iet-hf" signature="A8A34C8BA14A26BD13D374F95A5591926A84135B" version="7.1.3">
 <include>qfs.qft</include>
 <TestSet id="_4S" name="Application">
 <SetupSequence id="_6" name="Launch Main">
@@ -2101,6 +2101,59 @@ sjg]NrzSbsD0x3/p~m,.cX0nZRT5]e!,Ca=n6w6\{mSk6^YZC}(|e)4Km\iP=WB}D/AA</webp>
 <CheckStringStep client="$(client)" component="frameSivatagi_Vizhalozat.text2" id="_Dd">
 <text>Plumbers: 8</text>
 </CheckStringStep>
+</TestStep>
+</TestCase>
+<TestCase id="_Dg" name="Game end">
+<TestStep id="_Dh" name="Set rounds">
+<MouseEventStep clicks="1" client="$(client)" component="buttonSettings" event="MOUSE_MPRC" id="_Di" modifiers="16"/>
+<TextInputStep clear="true" client="$(client)" component="frameSettings.text2" id="_Dj">
+<text>1</text>
+</TextInputStep>
+<MouseEventStep clicks="1" client="$(client)" component="buttonSet2" event="MOUSE_MPRC" id="_Dk" modifiers="16"/>
+<WindowEventStep client="$(client)" component="frameSettings" event="WINDOW_CLOSING" id="_Dl"/>
+</TestStep>
+<TestStep id="_Dm" name="Check button">
+<MouseEventStep clicks="1" client="$(client)" component="buttonStart" event="MOUSE_MPRC" id="_Dn" modifiers="16"/>
+</TestStep>
+<TestStep id="_Dq" name="Round">
+<MouseEventStep clicks="1" client="$(client)" component="buttonMove" event="MOUSE_MPRC" id="_G1" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonPump2" event="MOUSE_MPRC" id="_G2" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonEnd_turn" event="MOUSE_MPRC" id="_G3" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonMove" event="MOUSE_MPRC" id="_G4" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonPump2" event="MOUSE_MPRC" id="_G5" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonEnd_turn" event="MOUSE_MPRC" id="_G6" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonMove" event="MOUSE_MPRC" id="_G7" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonPump2" event="MOUSE_MPRC" id="_G8" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonEnd_turn" event="MOUSE_MPRC" id="_G9" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonMove" event="MOUSE_MPRC" id="_GA" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonPump2" event="MOUSE_MPRC" id="_GB" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonEnd_turn" event="MOUSE_MPRC" id="_GC" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonMove2" event="MOUSE_MPRC" id="_GD" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonPump32" event="MOUSE_MPRC" id="_GE" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonEnd_turn2" event="MOUSE_MPRC" id="_GF" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonMove2" event="MOUSE_MPRC" id="_GG" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonPump43" event="MOUSE_MPRC" id="_GH" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonEnd_turn2" event="MOUSE_MPRC" id="_GI" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonMove2" event="MOUSE_MPRC" id="_GJ" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonPump1" event="MOUSE_MPRC" id="_GK" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonEnd_turn2" event="MOUSE_MPRC" id="_GL" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonMove2" event="MOUSE_MPRC" id="_GM" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonPump2" event="MOUSE_MPRC" id="_GN" modifiers="16"/>
+<MouseEventStep clicks="1" client="$(client)" component="buttonEnd_turn2" event="MOUSE_MPRC" id="_GO" modifiers="16"/>
+</TestStep>
+<TestStep id="_ED" name="Check texts">
+<CheckStringStep client="$(client)" component="frameRestart_Menu.text" id="_EE">
+<text>Plumbers won!</text>
+</CheckStringStep>
+<CheckStringStep client="$(client)" component="frameRestart_Menu.text2" id="_GP">
+<text>Nomads: 0</text>
+</CheckStringStep>
+<CheckStringStep client="$(client)" component="frameRestart_Menu.text3" id="_GQ">
+<text>Plumbers: 8</text>
+</CheckStringStep>
+</TestStep>
+<TestStep id="_GR" name="Quit">
+<MouseEventStep clicks="1" client="$(client)" component="buttonQuit" event="MOUSE_MPRC" id="_GV" modifiers="16"/>
 </TestStep>
 </TestCase>
 <CleanupSequence id="_4U" name="Stop Main">
