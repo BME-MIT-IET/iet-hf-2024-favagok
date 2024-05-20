@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RootStep>
+<RootStep id="_0" indentation="0" linelength="160" name="iet-hf" signature="AC99CB1D13EA66E57D0B55283AC11A9382F2E2E9" version="7.1.3">
+<include>qfs.qft</include>
+<TestSet id="_4S" name="Application">
+<SetupSequence id="_6" name="Launch Main">
+<SetGlobalStep id="_7" varname="client">
+<default>Main</default>
+</SetGlobalStep>
+<ClientWaiter client="$(client)" id="_8" local="true" raise="false" resvarname="isSUTRunning" timeout="0">
+<comment>This node checks whether the SUT is already running. The result of this check will be stored in the variable isSUTRunning. The variable itself can contain true if SUT is already running or false if SUT is not running. This variable will be used in the following 'If' node.</comment>
+</ClientWaiter>
+<IfSequence id="_9" name="Launch SUT if not running" test="not $(isSUTRunning)">
+<JavaClientStarter class="program.main.Main" client="$(client)" executable="${qftest:java}" id="_A">
+<parameter>-classpath</parameter>
+<parameter>/mnt/Storage/Storage/projekt/IntelliJProjects/IntegraciosEsEllenorzesiTechnikak/iet-hf-2024-favagok/target/classes:/home/peros/.m2/repository/joda-time/joda-time/2.9.2/joda-time-2.9.2.jar:/home/peros/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/peros/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/peros/.m2/repository/org/apache/commons/commons-imaging/1.0-alpha2/commons-imaging-1.0-alpha2.jar:/home/peros/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar:/home/peros/.m2/repository/io/cucumber/cucumber-java/7.17.0/cucumber-java-7.17.0.jar:/home/peros/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/peros/.m2/repository/io/cucumber/cucumber-core/7.17.0/cucumber-core-7.17.0.jar:/home/peros/.m2/repository/io/cucumber/cucumber-gherkin/7.17.0/cucumber-gherkin-7.17.0.jar:/home/peros/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.17.0/cucumber-gherkin-messages-7.17.0.jar:/home/peros/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/home/peros/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/home/peros/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/home/peros/.m2/repository/io/cucumber/query/12.1.2/query-12.1.2.jar:/home/peros/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/home/peros/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/home/peros/.m2/repository/io/cucumber/datatable/7.17.0/datatable-7.17.0.jar:/home/peros/.m2/repository/io/cucumber/cucumber-plugin/7.17.0/cucumber-plugin-7.17.0.jar:/home/peros/.m2/repository/io/cucumber/docstring/7.17.0/docstring-7.17.0.jar:/home/peros/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/home/peros/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/home/peros/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar </parameter>
+</JavaClientStarter>
+<ClientWaiter client="$(client)" id="_B"/>
+</IfSequence>
+</SetupSequence>
+<CleanupSequence id="_4U" name="Stop Main">
+<ClientStopper client="$(client)" id="_4l"/>
+<ProcessWaiter client="$(client)" id="_4m"/>
+</CleanupSequence>
+</TestSet>
+<PackageRoot id="_3"/>
+<ExtraSequence id="_4"/>
+<WindowList id="_5">
+<WindowStep class="Window" feature="Start Menu" height="600" id="frameStart_Menu" uid="_3M" width="800" x="560" y="1477">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">program.main.startMenu</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Start Menu</extrafeature>
+<extrafeature name="qfs:labelTitle" negate="false" regexp="false" state="1">Start Menu</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<ComponentStep class="Button" classcount="3" classindex="0" feature="Start" height="50" id="buttonStart" uid="_3N" width="200" x="300" y="460">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Start</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">Start</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="3" classindex="1" feature="Story" height="40" id="buttonStory" uid="_4r" width="100" x="10" y="500">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Story</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">Story</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="3" classindex="2" feature="Settings" height="40" id="buttonSettings" uid="_4t" width="120" x="630" y="500">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Settings</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">Settings</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+</WindowStep>
+<WindowStep class="Window" feature="Sivatagi Vizhalozat" height="664" id="frameSivatagi_Vizhalozat" uid="_3O" width="820" x="550" y="1408">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Sivatagi Vizhalozat</extrafeature>
+<extrafeature name="qfs:labelTitle" negate="false" regexp="false" state="1">Sivatagi Vizhalozat</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<ComponentStep class="Button" classcount="11" classindex="3" feature="move" height="24" id="buttonMove" uid="_3P" width="60" x="8" y="605">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">move</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">move</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="11" classindex="4" feature="pick up pump" height="24" id="buttonPick_up_pump" uid="_50" width="98" x="73" y="605">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">pick up pump</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">pick up pump</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="11" classindex="5" feature="pick up pipe" height="24" id="buttonPick_up_pipe" uid="_51" width="92" x="176" y="605">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">pick up pipe</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">pick up pipe</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="11" classindex="6" feature="repair pump" height="24" id="buttonRepair_pump" uid="_53" width="93" x="273" y="605">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">repair pump</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">repair pump</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="11" classindex="7" feature="change pipe in" height="24" id="buttonChange_pipe_in" uid="_54" width="105" x="371"
+               y="605">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">change pipe in</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">change pipe in</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="11" classindex="8" feature="change pipe out" height="24" id="buttonChange_pipe_out" uid="_56" width="112" x="481"
+               y="605">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">change pipe out</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">change pipe out</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="11" classindex="9" feature="place pipe" height="24" id="buttonPlace_pipe" uid="_58" width="84" x="598" y="605">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">place pipe</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">place pipe</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="11" classindex="10" feature="pick up new pipe" height="24" id="buttonPick_up_new_pipe" uid="_59" width="115" x="687"
+               y="605">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">pick up new pipe</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">pick up new pipe</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Panel" classcount="7" classindex="6" height="34" id="frameSivatagi_Vizhalozat.panel" uid="_5E" width="810" x="0" y="600">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">program.main.PlumberButtonPanel</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Panel</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JPanel</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="3" classindex="2" height="50" id="frameSivatagi_Vizhalozat.text" uid="_9Y" width="200" x="103" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="3" classindex="0" height="50" id="frameSivatagi_Vizhalozat.text2" uid="_AQ" width="200" x="610" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="11" classindex="0" feature="move" height="27" id="buttonMove2" uid="_Bz" width="65" x="248" y="602">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">move</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">move</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+</WindowStep>
+<WindowStep class="Window" height="500" id="frame" uid="_3Q" width="500" x="0" y="1200">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+</WindowStep>
+<WindowStep class="Window" height="500" id="frame2" uid="_3R" width="500" x="0" y="1237">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="0" feature="pump2" height="166" id="buttonPump2" uid="_3S" width="500" x="0" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="5" classindex="4" feature="end turn" height="100" id="buttonEnd_turn" uid="_3T" width="500" x="0" y="400">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="1" feature="pump3" height="166" id="buttonPump3" uid="_3k" width="500" x="0" y="166">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="5" classindex="3" feature="destroy pipe" height="100" id="buttonDestroy_pipe" uid="_41" width="500" x="0"
+               y="300">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="5" classindex="0" feature="make sticky" height="100" id="buttonMake_sticky" uid="_4z" width="500" x="0"
+               y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="5" classindex="1" feature="place pump" height="100" id="buttonPlace_pump" uid="_4+" width="500" x="0"
+               y="100">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="5" classindex="2" feature="repair pipe" height="100" id="buttonRepair_pipe" uid="_4-" width="500" x="0"
+               y="200">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="1" feature="pipe7" height="166" id="buttonPipe7" uid="_52" width="500" x="0" y="166">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="2" classindex="1" feature="pipe8" height="250" id="buttonPipe8" uid="_55" width="500" x="0" y="250">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="1" classindex="0" feature="pipe4" height="500" id="buttonPipe4" uid="_57" width="500" x="0" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="1" feature="pump4" height="166" id="buttonPump4" uid="_5A" width="500" x="0" y="166">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="4" classindex="2" feature="pipe7" height="125" id="buttonPipe72" uid="_5B" width="500" x="0" y="250">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="2" classindex="1" feature="pipe0" height="250" id="buttonPipe0" uid="_5C" width="500" x="0" y="250">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="1" feature="pump0" height="166" id="buttonPump0" uid="_5D" width="500" x="0" y="166">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="5" classindex="0" feature="pipe4" height="100" id="buttonPipe42" uid="_5F" width="500" x="0" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="2" feature="pipe10" height="166" id="buttonPipe10" uid="_5G" width="500" x="0" y="332">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="2" feature="pipe7" height="166" id="buttonPipe73" uid="_5H" width="500" x="0" y="332">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="2" feature="pump4" height="166" id="buttonPump42" uid="_9s" width="500" x="0" y="332">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="0" feature="pump3" height="166" id="buttonPump32" uid="_B+" width="500" x="0" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="4" classindex="3" feature="end turn" height="125" id="buttonEnd_turn2" uid="_B-" width="500" x="0" y="375">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="0" feature="pump4" height="166" id="buttonPump43" uid="_C0" width="500" x="0" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="2" classindex="0" feature="pump1" height="250" id="buttonPump1" uid="_C1" width="500" x="0" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+<ComponentStep class="java.awt.Button" classcount="3" classindex="2" feature="spring1" height="166" id="buttonSpring1" uid="_EL" width="500" x="0" y="332">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">java.awt.Button</extrafeature>
+</ComponentStep>
+</WindowStep>
+<WindowStep class="Window" height="1" id="frame3" uid="_3j" width="1" x="0" y="1237">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+</WindowStep>
+<WindowStep class="Window" height="470" id="frame4" uid="_3l" width="490" x="0" y="1237">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+</WindowStep>
+<WindowStep class="Window" feature="Story" height="610" id="frameStory" uid="_4s" width="1000" x="0" y="1237">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Story</extrafeature>
+<extrafeature name="qfs:labelTitle" negate="false" regexp="false" state="1">Story</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<ComponentStep class="TextArea" classcount="1" classindex="0" id="frameStory.text" uid="_7L" x="0" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextArea</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextArea</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextArea</extrafeature>
+</ComponentStep>
+</WindowStep>
+<WindowStep class="Window" feature="Settings" height="190" id="frameSettings" uid="_4u" width="450" x="735" y="1682">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">program.main.settings</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Settings</extrafeature>
+<extrafeature name="qfs:labelTitle" negate="false" regexp="false" state="1">Settings</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<ComponentStep class="TextField" classcount="6" classindex="2" height="30" id="frameSettings.text" uid="_4v" width="80" x="100" y="40">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="2" classindex="0" feature="Set" height="30" id="buttonSet" uid="_4w" width="80" x="180" y="40">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Set</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">Set</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="6" classindex="5" height="30" id="frameSettings.text2" uid="_4x" width="80" x="100" y="120">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="2" classindex="1" feature="Set" height="30" id="buttonSet2" uid="_4y" width="80" x="180" y="120">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Set</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">Set</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="6" classindex="0" height="30" id="frameSettings.text3" uid="_7l" width="450" x="0" y="0">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="6" classindex="3" height="30" id="frameSettings.text4" uid="_7m" width="450" x="0" y="80">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="6" classindex="4" height="30" id="frameSettings.text5" uid="_7n" width="100" x="0" y="120">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="6" classindex="1" height="30" id="frameSettings.text6" uid="_7o" width="100" x="0" y="40">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+</WindowStep>
+<WindowStep class="Window" feature="Restart Menu" height="600" id="frameRestart_Menu" uid="_EG" width="800" x="560" y="1440">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">program.main.restart_menu</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Window</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">Restart Menu</extrafeature>
+<extrafeature name="qfs:labelTitle" negate="false" regexp="false" state="1">Restart Menu</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JFrame</extrafeature>
+<ComponentStep class="TextField" classcount="3" classindex="0" height="50" id="frameRestart_Menu.text" uid="_EH" width="800" x="0" y="50">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="3" classindex="1" height="30" id="frameRestart_Menu.text2" uid="_EI" width="200" x="300" y="160">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="TextField" classcount="3" classindex="2" height="30" id="frameRestart_Menu.text3" uid="_EJ" width="200" x="300" y="240">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">TextField</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JTextField</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="2" classindex="1" feature="restart" height="50" id="buttonRestart" uid="_EK" width="200" x="300" y="400">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">restart</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">restart</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+<ComponentStep class="Button" classcount="2" classindex="0" feature="quit" height="50" id="buttonQuit" uid="_GW" width="200" x="300" y="460">
+<extrafeature name="qfs:class" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+<extrafeature name="qfs:genericclass" negate="false" regexp="false" state="0">Button</extrafeature>
+<extrafeature name="qfs:labelBest" negate="false" regexp="false" state="0">quit</extrafeature>
+<extrafeature name="qfs:labelText" negate="false" regexp="false" state="1">quit</extrafeature>
+<extrafeature name="qfs:systemclass" negate="false" regexp="false" state="0">javax.swing.JButton</extrafeature>
+</ComponentStep>
+</WindowStep>
+</WindowList>
+</RootStep>
