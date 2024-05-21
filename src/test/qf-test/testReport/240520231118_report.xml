@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-suite basedir="" executed-by="peros" execution-date="2024-05-20 23:11:18" hfile="240520231118_report.html" host="peros" java-version="17.0.11+9" name="/mnt/Storage/Storage/projekt/IntelliJProjects/IntegraciosEsEllenorzesiTechnikak/iet-hf-2024-favagok/src/test/qf-test/iet-hf.qft" os-version="amd64-Linux-6.8.0-31-generic" pstate="0" qftest-build="30173" qftest-version="7.1.3" relname=".../iet-hf.qft" runid="240520231118" sourcefile=".../240520231118.qzp" state="0" suitename="iet-hf" type="qftest" vstate="2" xfile="240520231118_report.xml">
+  <summary duration="77725" errors="1" exceptions="0" expectederrors="0" realtime="78117" time="2024-05-20 23:11:18" timestamp="1716239478120" warnings="0">
+    <exceptions/>
+    <errors/>
+    <warnings/>
+  </summary>
+  <testset implemented="true" name="Application" nodeid="_4S" plainname="Application" pstate="0" qname="Application" ref="N66838" state="0" vstate="2">
+    <summary duration="77681" errors="1" exceptions="0" expectederrors="0" realtime="78073" time="23:11:18.128" timestamp="1716239478128" warnings="0">
+      <exceptions/>
+      <errors/>
+      <warnings/>
+    </summary>
+    <testcase implemented="true" name="Start window" nodeid="_4T" plainname="Start window" pstate="0" qname="Application.Start window" ref="N66898" state="0" vstate="0">
+      <summary duration="982" errors="0" exceptions="0" expectederrors="0" realtime="982" time="23:11:24.346" timestamp="1716239484346" warnings="0">
+        <exceptions/>
+        <errors/>
+        <warnings/>
+      </summary>
+      <teststep name="Check texts" pstate="0" state="0" vstate="0">
+        <summary duration="401" errors="0" exceptions="0" expectederrors="0" realtime="401" time="23:11:24.367" timestamp="1716239484367" warnings="0"/>
+      </teststep>
+      <teststep name="Check images" pstate="0" state="0" vstate="0">
+        <summary duration="558" errors="0" exceptions="0" expectederrors="0" realtime="558" time="23:11:24.769" timestamp="1716239484769" warnings="0"/>
+      </teststep>
+    </testcase>
+    <testcase implemented="true" name="Story window" nodeid="_8E" plainname="Story window" pstate="0" qname="Application.Story window" ref="N67239" state="0" vstate="0">
+      <summary duration="599" errors="0" exceptions="0" expectederrors="0" realtime="599" time="23:11:31.162" timestamp="1716239491162" warnings="0">
+        <exceptions/>
+        <errors/>
+        <warnings/>
+      </summary>
+      <teststep name="Check button" pstate="0" state="0" vstate="0">
+        <summary duration="422" errors="0" exceptions="0" expectederrors="0" realtime="422" time="23:11:31.184" timestamp="1716239491184" warnings="0"/>
+      </teststep>
+      <teststep name="Check texts" pstate="0" state="0" vstate="0">
+        <summary duration="155" errors="0" exceptions="0" expectederrors="0" realtime="155" time="23:11:31.606" timestamp="1716239491606" warnings="0"/>
+      </teststep>
+    </testcase>
+    <testcase implemented="true" name="Settings window" nodeid="_8F" plainname="Settings window" pstate="0" qname="Application.Settings window" ref="N67436" state="0" vstate="2">
+      <summary duration="2395" errors="1" exceptions="0" expectederrors="0" realtime="2787" time="23:11:37.464" timestamp="1716239497464" warnings="0">
+        <exceptions/>
+        <errors>
+          <error pstate="2" ref="N67789" state="2" vstate="2">
+            <screenshot height="1080" screen="1" src="images/240520231118_report_ss0.png" width="1920"/>
+            <screenshot client="Main" height="190" src="images/240520231118_report_ss1.png" title="Settings" width="450"/>
+            <screenshot client="Main" height="600" src="images/240520231118_report_ss2.png" title="Start Menu" width="800"/>
+            <message>Mismatch
+Expected: 'Rounds: 10'
+Got: 'Rounds : 10'.</message>
+          </error>
+        </errors>
+        <warnings/>
+      </summary>
+      <teststep name="Check button" pstate="0" state="0" vstate="0">
+        <summary duration="524" errors="0" exceptions="0" expectederrors="0" realtime="524" time="23:11:37.489" timestamp="1716239497489" warnings="0"/>
+      </teststep>
+      <teststep name="Check texts" pstate="0" state="0" vstate="0">
+        <summary duration="204" errors="0" exceptions="0" expectederrors="0" realtime="204" time="23:11:38.013" timestamp="1716239498013" warnings="0"/>
+      </teststep>
+      <teststep name="Check images" pstate="0" state="0" vstate="0">
+        <summary duration="215" errors="0" exceptions="0" expectederrors="0" realtime="215" time="23:11:38.218" timestamp="1716239498218" warnings="0"/>
+      </teststep>
+      <teststep name="Check set" pstate="0" state="0" vstate="2">
+        <summary duration="1425" errors="1" exceptions="0" expectederrors="0" realtime="1817" time="23:11:38.433" timestamp="1716239498433" warnings="0"/>
+        <error link="N67789"/>
+      </teststep>
+    </testcase>
+    <testcase implemented="true" name="Game window" nodeid="_8G" plainname="Game window" pstate="0" qname="Application.Game window" ref="N67987" state="0" vstate="0">
+      <summary duration="10859" errors="0" exceptions="0" expectederrors="0" realtime="10859" time="23:11:45.820" timestamp="1716239505820" warnings="0">
+        <exceptions/>
+        <errors/>
+        <warnings/>
+      </summary>
+      <teststep name="Set rounds" pstate="0" state="0" vstate="0">
+        <summary duration="1003" errors="0" exceptions="0" expectederrors="0" realtime="1003" time="23:11:45.838" timestamp="1716239505838" warnings="0"/>
+      </teststep>
+      <teststep name="Check button" pstate="0" state="0" vstate="0">
+        <summary duration="75" errors="0" exceptions="0" expectederrors="0" realtime="75" time="23:11:46.842" timestamp="1716239506842" warnings="0"/>
+      </teststep>
+      <teststep name="Check texts" pstate="0" state="0" vstate="0">
+        <summary duration="687" errors="0" exceptions="0" expectederrors="0" realtime="687" time="23:11:46.917" timestamp="1716239506917" warnings="0"/>
+      </teststep>
+      <teststep name="First player" pstate="0" state="0" vstate="0">
+        <summary duration="3518" errors="0" exceptions="0" expectederrors="0" realtime="3518" time="23:11:47.604" timestamp="1716239507604" warnings="0"/>
+      </teststep>
+      <teststep name="Second and third player" pstate="0" state="0" vstate="0">
+        <summary duration="3407" errors="0" exceptions="0" expectederrors="0" realtime="3407" time="23:11:51.122" timestamp="1716239511122" warnings="0"/>
+      </teststep>
+      <teststep name="Fourth player" pstate="0" state="0" vstate="0">
+        <summary duration="2148" errors="0" exceptions="0" expectederrors="0" realtime="2148" time="23:11:54.530" timestamp="1716239514530" warnings="0"/>
+      </teststep>
+    </testcase>
+    <testcase implemented="true" name="Game round" nodeid="_Bf" plainname="Game round" pstate="0" qname="Application.Game round" ref="N68742" state="0" vstate="0">
+      <summary duration="13700" errors="0" exceptions="0" expectederrors="0" realtime="13700" time="23:12:02.524" timestamp="1716239522524" warnings="0">
+        <exceptions/>
+        <errors/>
+        <warnings/>
+      </summary>
+      <teststep name="Set rounds" pstate="0" state="0" vstate="0">
+        <summary duration="929" errors="0" exceptions="0" expectederrors="0" realtime="929" time="23:12:02.542" timestamp="1716239522542" warnings="0"/>
+      </teststep>
+      <teststep name="Check button" pstate="0" state="0" vstate="0">
+        <summary duration="82" errors="0" exceptions="0" expectederrors="0" realtime="82" time="23:12:03.472" timestamp="1716239523472" warnings="0"/>
+      </teststep>
+      <teststep name="Check texts" pstate="0" state="0" vstate="0">
+        <summary duration="431" errors="0" exceptions="0" expectederrors="0" realtime="431" time="23:12:03.554" timestamp="1716239523554" warnings="0"/>
+      </teststep>
+      <teststep name="Round" pstate="0" state="0" vstate="0">
+        <summary duration="12203" errors="0" exceptions="0" expectederrors="0" realtime="12203" time="23:12:03.985" timestamp="1716239523985" warnings="0"/>
+      </teststep>
+      <teststep name="Check texts" pstate="0" state="0" vstate="0">
+        <summary duration="36" errors="0" exceptions="0" expectederrors="0" realtime="36" time="23:12:16.188" timestamp="1716239536188" warnings="0"/>
+      </teststep>
+    </testcase>
+    <testcase implemented="true" name="Game end" nodeid="_Dg" plainname="Game end" pstate="0" qname="Application.Game end" ref="N69086" state="0" vstate="0">
+      <summary duration="14499" errors="0" exceptions="0" expectederrors="0" realtime="14499" time="23:12:21.623" timestamp="1716239541623" warnings="0">
+        <exceptions/>
+        <errors/>
+        <warnings/>
+      </summary>
+      <teststep name="Set rounds" pstate="0" state="0" vstate="0">
+        <summary duration="971" errors="0" exceptions="0" expectederrors="0" realtime="971" time="23:12:21.641" timestamp="1716239541641" warnings="0"/>
+      </teststep>
+      <teststep name="Check button" pstate="0" state="0" vstate="0">
+        <summary duration="55" errors="0" exceptions="0" expectederrors="0" realtime="55" time="23:12:22.612" timestamp="1716239542612" warnings="0"/>
+      </teststep>
+      <teststep name="Round" pstate="0" state="0" vstate="0">
+        <summary duration="12715" errors="0" exceptions="0" expectederrors="0" realtime="12715" time="23:12:22.668" timestamp="1716239542668" warnings="0"/>
+      </teststep>
+      <teststep name="Check texts" pstate="0" state="0" vstate="0">
+        <summary duration="105" errors="0" exceptions="0" expectederrors="0" realtime="105" time="23:12:35.384" timestamp="1716239555384" warnings="0"/>
+      </teststep>
+      <teststep name="Quit" pstate="0" state="0" vstate="0">
+        <summary duration="621" errors="0" exceptions="0" expectederrors="0" realtime="621" time="23:12:35.490" timestamp="1716239555490" warnings="0"/>
+      </teststep>
+    </testcase>
+  </testset>
+</test-suite>
