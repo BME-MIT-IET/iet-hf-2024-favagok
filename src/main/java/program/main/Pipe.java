@@ -177,7 +177,6 @@ public class Pipe extends Field {
             this.connectedPumps[1].removePipe(this);
             this.connectedPumps[1] = null;
         }
-        //System.out.println("SUCCESS - Pump.Detach()");
     }
 
     /**
@@ -208,14 +207,11 @@ public class Pipe extends Field {
      */
     public boolean flowThru() {
         if (this.connectedPumps[0].getPipeIn() == this && this.connectedPumps[1].getPipeOut() == this) {
-            //System.out.println("SUCCESS - Pump.flowThru()");
             return true;
         }
         if (this.connectedPumps[1].getPipeIn() == this && this.connectedPumps[0].getPipeOut() == this) {
-            //System.out.println("SUCCESS - Pump.flowThru()");
             return true;
         }
-        //System.out.println("SUCCESS - Pump.flowThru()");
         return false;
     }
 
@@ -226,13 +222,9 @@ public class Pipe extends Field {
      * @return
      */
     public Pump otherEnd(Pump p) {
-        //Pump temp = connectedPumps[0];
-        //System.out.println(this.connectedPumps[0]);
-        //System.out.println(this.connectedPumps[1]);
         if (connectedPumps[0] != p) {
             return connectedPumps[0];
         }
-        //System.out.println("SUCCESS - Pump.otherEnd()");
         return connectedPumps[1];
     }
 
@@ -292,7 +284,6 @@ public class Pipe extends Field {
             this.setWater(false);
             Controller.addPointsToNomad();
         }
-        //System.out.println("SUCCESS - Pump.turn()");
     }
 
     /**
@@ -393,7 +384,6 @@ public class Pipe extends Field {
         ArrayList<Pump> lista = new ArrayList<Pump>();
         lista.add(this.connectedPumps[0]);
         lista.add(this.connectedPumps[1]);
-        //System.out.println("SUCCESS - Pump.getConnectedPumps()");
         return lista;
     }
 
@@ -414,7 +404,6 @@ public class Pipe extends Field {
      */
     public void SetTurnNotToSlippery(int i) {
         turnsToNotSlippery = i;
-        //System.out.println("SUCCESS - Pump.SetTurnNotToSlippery()");
     }
 
     /**
@@ -424,10 +413,8 @@ public class Pipe extends Field {
      */
     public boolean GetSlippery() {
         if (turnsToNotSlippery > 0) {
-            //System.out.println("SUCCESS - Pump.GetSlippery()");
             return true;
         }
-        //System.out.println("SUCCESS - Pump.GetSlippery()");
         return false;
     }
 
@@ -437,7 +424,6 @@ public class Pipe extends Field {
      * @return
      */
     public int getTurnToNotSticky() {
-        //System.out.println("SUCCESS - Pump.getTurnToNotSticky()");
         return turnToNotSticky;
     }
 
@@ -447,7 +433,6 @@ public class Pipe extends Field {
      * @return
      */
     public int getTurnsToNotSlippery() {
-        //System.out.println("SUCCESS - Pump.getTurnsToNotSlippery()");
         return turnsToNotSlippery;
     }
 
@@ -469,7 +454,6 @@ public class Pipe extends Field {
      * @param i
      */
     public void setTurnToNotSticky(int i) {
-        //System.out.println("SUCCESS - Pump.setTurnToNotSticky");
         turnToNotSticky = i;
     }
 
@@ -482,10 +466,8 @@ public class Pipe extends Field {
         Random random = new Random();
         int randomNumber = random.nextInt(2);
         if (randomNumber == 1) {
-            //System.out.println("SUCCESS - Pump.canPlayerStep()");
             return true;
         } else {
-            //System.out.println("SUCCESS - Pump.canPlayerStep()");
             return false;
         }
     }
@@ -496,7 +478,6 @@ public class Pipe extends Field {
     public void destroy() {
         if (this.getState() == State.Working) {
             if (turntoDestroy == 0) {
-                //System.out.println("SUCCESS - Pump.destroy()");
                 this.setState(State.Broken);
             }
         }
@@ -513,7 +494,6 @@ public class Pipe extends Field {
             int randomNumber = random.nextInt(4);
             randomNumber = randomNumber + 2;
             turntoDestroy = randomNumber;
-            //System.out.println("SUCCESS - Pump.repair()");
         }
     }
 
@@ -523,7 +503,6 @@ public class Pipe extends Field {
      * @return
      */
     public boolean getWater() {
-        //System.out.println("SUCCESS - Pump.getWater()");
         return water;
     }
 
@@ -533,7 +512,6 @@ public class Pipe extends Field {
      * @param state
      */
     public void setWater(boolean state) {
-        //System.out.println("SUCCESS - Pump.setWater()");
         water = state;
     }
 
