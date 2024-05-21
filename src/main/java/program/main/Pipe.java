@@ -21,7 +21,7 @@ public class Pipe extends Field {
     /**
      * A csőhöz csatlakoztatott pumpák tömbje.
      */
-    private Pump connectedPumps[] = new Pump[2];
+    private Pump[] connectedPumps = new Pump[2];
 
     /**
      * Megadja, hogy hány körig nem lehet még kilyukasztani a csövet.
