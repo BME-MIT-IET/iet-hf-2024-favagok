@@ -11,6 +11,14 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<!-- QF-TEST -->
+		<!--
+		<qf.reportfolder>src/test/qf-test/testReport</qf.reportfolder>
+		<qf.log>logFile.qrz</qf.log>
+		<qf.suite>src/test/qf-test/iet-hf.qft</qf.suite>
+		<qf.exe>/usr/local/bin/qftest</qf.exe>
+		-->
 	</properties>
 
 	<dependencies>
@@ -77,6 +85,34 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<!-- QF-TEST -->
+			<!--
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<configuration>
+							<tasks>
+								<exec executable="${qf.exe}">
+									<arg value="-batch"/>
+									<arg value="-report"/>
+									<arg value="${qf.reportfolder}"/>
+									<arg value="-runlog"/>
+									<arg value="${qf.log}"/>
+									<arg value="${qf.suite}"/>
+								</exec>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			-->
 		</plugins>
 	</build>
 
