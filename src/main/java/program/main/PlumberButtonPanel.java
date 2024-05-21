@@ -102,7 +102,7 @@ public class PlumberButtonPanel extends JPanel implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (Controller.CurrentTurnIsNomad) {
+        if (Controller.currentTurnIsNomad) {
             //this.setVisible(false);
             return;
         } else {

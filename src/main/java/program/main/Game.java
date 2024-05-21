@@ -154,10 +154,10 @@ public class Game implements Runnable {
 
 
         if (!Controller.getCurrentTurnIsNomad()) {
-            if (controller.CurrentPlumberTurn() != null)
-                g.drawImage(controller.CurrentPlumberTurn().getPicture(), 13, 15, 50, 50, null);
-        } else if (controller.CurrentNomadTurn() != null)
-            g.drawImage(controller.CurrentNomadTurn().getPicture(), 13, 15, 50, 50, null);
+            if (controller.currentPlumberTurn() != null)
+                g.drawImage(controller.currentPlumberTurn().getPicture(), 13, 15, 50, 50, null);
+        } else if (controller.currentNomadTurn() != null)
+            g.drawImage(controller.currentNomadTurn().getPicture(), 13, 15, 50, 50, null);
     }
 
     /**
@@ -190,7 +190,7 @@ public class Game implements Runnable {
         long lastCheck = System.currentTimeMillis();
         double lamdaU = 0;
         double lamdaF = 0;
-        while (!Controller.GameOver) {
+        while (!Controller.gameOver) {
             long currentTime = System.nanoTime();
 
             lamdaU += (currentTime - previousTime) / timePerUpdata;
@@ -213,7 +213,7 @@ public class Game implements Runnable {
                 frames = 0;
                 update = 0;
             }
-            if (controller.GameOver) {
+            if (controller.gameOver) {
 
                 restartmenu = new restart_menu();
                 try {
