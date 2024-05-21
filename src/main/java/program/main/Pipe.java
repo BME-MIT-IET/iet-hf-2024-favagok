@@ -206,10 +206,10 @@ public class Pipe extends Field {
      * @return
      */
     public boolean flowThru() {
-        if (this.connectedPumps[0].getPipeIn() == this && this.connectedPumps[1].getPipeOut() == this) {
-            return true;
-        }
-        if (this.connectedPumps[1].getPipeIn() == this && this.connectedPumps[0].getPipeOut() == this) {
+        if (this.connectedPumps[0].getPipeIn() == this && this.connectedPumps[1].getPipeOut() == this
+            ||
+            this.connectedPumps[1].getPipeIn() == this && this.connectedPumps[0].getPipeOut() == this
+            ) {
             return true;
         }
         return false;
