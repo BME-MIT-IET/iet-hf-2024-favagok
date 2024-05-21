@@ -1,12 +1,8 @@
 package program.main;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
-import java.time.LocalDateTime;
 import java.util.Random;
 
 import static program.main.Main.game;
