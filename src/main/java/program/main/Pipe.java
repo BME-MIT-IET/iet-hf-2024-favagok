@@ -1,13 +1,12 @@
 package program.main;
 
 import java.awt.*;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
 import static program.main.Main.game;
 
-public class Pipe extends Field implements Serializable {
+public class Pipe extends Field {
 
     int x1;
     int y1;
