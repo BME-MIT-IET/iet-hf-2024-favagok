@@ -3,7 +3,6 @@ package com.stepDefinition;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import program.main.PlumberButtonPanel;
-import program.main.PlumberPipeInWindow;
 import program.main.PlumberPipeOutWindow;
 
 import java.awt.event.ActionEvent;
@@ -11,7 +10,7 @@ import java.awt.event.ActionEvent;
 import static org.junit.Assert.assertEquals;
 import static program.main.Main.game;
 
-public class UIChangePipeOut {
+public class BDDChangePipeOut {
 
     private PlumberButtonPanel pbPanel = new PlumberButtonPanel();
     private PlumberPipeOutWindow ppWindow = new PlumberPipeOutWindow(3);
