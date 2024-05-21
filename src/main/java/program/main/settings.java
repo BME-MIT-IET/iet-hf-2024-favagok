@@ -125,7 +125,7 @@ public class settings extends JFrame {
 
         JTextField textfield = new JTextField();
         Integer rounds = Controller.getRounds();
-        textfield.setText("Rounds : " + rounds);
+        textfield.setText("Rounds: " + rounds);
 
 
         textfield.setBackground(new Color(240, 204, 125));

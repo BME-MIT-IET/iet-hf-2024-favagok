@@ -1,0 +1,932 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="css/qftest.css">
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="icons/favicon.ico">
+        <title>Test Report for Test-suite iet-hf</title>
+        <script type="text/javascript" src="user.js"></script>
+    </head>
+    <body>
+        <header class="gutter-left">
+            <div class="header">
+                <h1 class="title">Test Report for Test-suite iet-hf</h1>
+                <div class="homeicon">
+                    <a href="https://www.qfs.de/en/qftest/index.html"><img width="127" height="42" alt="QF-Test" title="QF-Test" src="icons/qftest.png"></a>
+                </div>
+            </div>
+            <div class="headerversion">
+                <div>Version 7.1.3</div>
+            </div>
+        </header>
+        <section class="summarylegend gutter-left">
+            <div class="summary">
+                <h2 class="suitesummarytitle">Summary</h2>
+                <div class="suitesummary">
+                    <div>
+                        <div class="label">test-suite name</div>
+                        <div>
+                            <div>iet-hf</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="label">test-suite file</div>
+                        <div>iet-hf.qft</div>
+                    </div>
+                    <div>
+                        <div class="label">Directory</div>
+                        <div>...</div>
+                    </div>
+                    <div>
+                        <div class="label">Test-run ID</div>
+                        <div>240520231118</div>
+                    </div>
+                    <div>
+                        <div class="label">Start time</div>
+                        <div>2024-05-20 23:11:18</div>
+                    </div>
+                    <div>
+                        <div class="label">Executed by</div>
+                        <div>peros</div>
+                    </div>
+                    <div>
+                        <div class="label">Host</div>
+                        <div>peros</div>
+                    </div>
+                    <div>
+                        <div class="label">Operating system</div>
+                        <div>amd64-Linux-6.8.0-31-generic</div>
+                    </div>
+                    <div>
+                        <div class="label">Java version</div>
+                        <div>17.0.11+9</div>
+                    </div>
+                    <div>
+                        <div class="label">QF-Test version</div>
+                        <div>7.1.3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <div class="chart">
+                    <a class="icon" href="images/240520231118_report_chart2.png"><img width="150" height="150" border="none" src="images/240520231118_report_chart.png" title="Test case overview - click for details"></a>
+                    <div class="desc">
+                        <p>
+                            <img width="9" height="9" src="icons/piefailed.png">&nbsp;failed  <img width="9" height="9" src="icons/piepassed.png">&nbsp;passed  <img width="9" height="9" src="icons/pieskipped.png">&nbsp;not executed
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="legendcontainer">
+                <div class="legend">
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/tests.png">
+                        </div>
+                        <div class="desc">Total number of test cases</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/skippedsets.png">
+                        </div>
+                        <div class="desc">Number of skipped test-sets</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/exception.png">
+                        </div>
+                        <div class="desc">Number of test cases with exceptions</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/notimpl.png">
+                        </div>
+                        <div class="desc">Number of not implemented test cases</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/error.png">
+                        </div>
+                        <div class="desc">Number of test cases with errors</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/run.png">
+                        </div>
+                        <div class="desc">Number of executed test cases</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/experror.png">
+                        </div>
+                        <div class="desc">Number of test cases with expected errors</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/percent.png">
+                        </div>
+                        <div class="desc">Percent test cases passed</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/ok.png">
+                        </div>
+                        <div class="desc">Number of successful test cases</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/duration.png">
+                        </div>
+                        <div class="desc">Time spent in tests</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/skipped.png">
+                        </div>
+                        <div class="desc">Number of skipped test cases</div>
+                    </div>
+                    <div class="legenditem">
+                        <div class="icon">
+                            <img width="16" height="16" src="icons/realtime.png">
+                        </div>
+                        <div class="desc">Elapsed realtime</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="suiteresult">
+            <table class="suiteresult" cellspacing="0">
+                <tr>
+                    <th class="margin"></th><th class="result">Overall result</th><th class="tests"><img width="16" height="16" src="icons/tests.png" alt="Total number of test cases" title="Total number of test cases"></th><th class="excepted"><img width="16" height="16" src="icons/exception.png" alt="Number of test cases with exceptions" title="Number of test cases with exceptions"></th><th class="failed"><img width="16" height="16" src="icons/error.png" alt="Number of test cases with errors" title="Number of test cases with errors"></th><th class="expfailed"><img width="16" height="16" src="icons/experror.png" alt="Number of test cases with expected errors" title="Number of test cases with expected errors"></th><th class="passed"><img width="16" height="16" src="icons/ok.png" alt="Number of successful test cases" title="Number of successful test cases"></th><th class="skipped"><img width="16" height="16" src="icons/skipped.png" alt="Number of skipped test cases" title="Number of skipped test cases"></th><th class="skippedsets"><img width="16" height="16" src="icons/skippedsets.png" alt="Number of skipped test-sets" title="Number of skipped test-sets"></th><th class="notimpl"><img width="16" height="16" src="icons/notimpl.png" alt="Number of not implemented test cases" title="Number of not implemented test cases"></th><th class="executed"><img width="16" height="16" src="icons/run.png" alt="Number of executed test cases" title="Number of executed test cases"></th><th class="percent"><img width="16" height="16" src="icons/percent.png" alt="Percent test cases passed" title="Percent test cases passed"></th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/error.png" alt="Error" title="Error"></td><td class="result">1 error</td><td class="tests">6</td><td class="excepted">0</td><td class="failed">1</td><td class="expfailed">0</td><td class="passed">5</td><td class="skipped">0</td><td class="skippedsets">0</td><td class="notimpl">0</td><td class="executed">6</td><td class="percent">83</td><td class="duration">1:18 min</td><td class="realtime">1:18 min</td>
+                </tr>
+            </table>
+        </section>
+        <nav class="reportnav">
+            <a href="#alltestsets">Overview: Test-sets</a><a href="#alltestcases">Overview: Test-sets and test cases</a><a href="#allerrors">Overview: Errors</a><a href="#details">Details</a>
+        </nav>
+        <div class="alltestsets branch">
+            <nav class="testsetalllinks branchlinks gutter-left">
+                <a name="alltestsets"></a><a name=""></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a>
+            </nav>
+            <h2 class="testsetalltitle branchtitle gutter-left">Overview: Test-sets</h2>
+            <table cellspacing="0" class="testsetalllist branchlist">
+                <tr class="headers">
+                    <th class="margin"></th><th class="testset">Test-set</th><th class="desc">Description</th><th class="tests"><img width="16" height="16" src="icons/tests.png" alt="Total number of test cases" title="Total number of test cases"></th><th class="excepted"><img width="16" height="16" src="icons/exception.png" alt="Number of test cases with exceptions" title="Number of test cases with exceptions"></th><th class="failed"><img width="16" height="16" src="icons/error.png" alt="Number of test cases with errors" title="Number of test cases with errors"></th><th class="expfailed"><img width="16" height="16" src="icons/experror.png" alt="Number of test cases with expected errors" title="Number of test cases with expected errors"></th><th class="passed"><img width="16" height="16" src="icons/ok.png" alt="Number of successful test cases" title="Number of successful test cases"></th><th class="skipped"><img width="16" height="16" src="icons/skipped.png" alt="Number of skipped test cases" title="Number of skipped test cases"></th><th class="skippedsets"><img width="16" height="16" src="icons/skippedsets.png" alt="Number of skipped test-sets" title="Number of skipped test-sets"></th><th class="notimpl"><img width="16" height="16" src="icons/notimpl.png" alt="Number of not implemented test cases" title="Number of not implemented test cases"></th><th class="executed"><img width="16" height="16" src="icons/run.png" alt="Number of executed test cases" title="Number of executed test cases"></th><th class="percent"><img width="16" height="16" src="icons/percent.png" alt="Percent test cases passed" title="Percent test cases passed"></th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/error.png" alt="Error" title="Error"></td><td class="testset">
+                        <div class="padding-left-0" style="padding-left:0px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testset.png" alt="Test-set" title="Test-set">
+                                </div>
+                                <div class="item">
+                                    <a href="#N66838">Application</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="tests">6</td><td class="excepted">0</td><td class="failed">1</td><td class="expfailed">0</td><td class="passed">5</td><td class="skipped">0</td><td class="skippedsets">0</td><td class="notimpl">0</td><td class="executed">6</td><td class="percent">83</td><td class="duration">1:18 min</td><td class="realtime">1:18 min</td>
+                </tr>
+            </table>
+        </div>
+        <div class="alltestcases branch">
+            <nav class="testcasealllinks branchlinks gutter-left">
+                <a name="alltestcases"></a><a name=""></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a>
+            </nav>
+            <h2 class="testcasealltitle branchtitle gutter-left">Overview: Test-sets and test cases</h2>
+            <table cellspacing="0" class="testcasealllist">
+                <tr class="headers">
+                    <th class="margin"></th><th class="testset">Test-set/Test case</th><th class="desc">Description</th><th class="result">Result</th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/error.png" alt="Error" title="Error"></td><td class="testset">
+                        <div class="padding-left-0" style="padding-left:0px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testset.png" alt="Test-set" title="Test-set">
+                                </div>
+                                <div class="item">
+                                    <a href="#N66838">Application</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">1 error</td><td class="duration">1:18 min</td><td class="realtime">1:18 min</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="padding-left-16" style="padding-left:16px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                                </div>
+                                <div class="item">
+                                    <a href="#N66898">Start window</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">982 ms</td><td class="realtime">982 ms</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="padding-left-16" style="padding-left:16px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                                </div>
+                                <div class="item">
+                                    <a href="#N67239">Story window</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">599 ms</td><td class="realtime">599 ms</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/error.png" alt="Error" title="Error"></td><td class="testcase">
+                        <div class="padding-left-16" style="padding-left:16px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                                </div>
+                                <div class="item">
+                                    <a href="#N67436">Settings window</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">1 error</td><td class="duration">2 s</td><td class="realtime">3 s</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="padding-left-16" style="padding-left:16px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                                </div>
+                                <div class="item">
+                                    <a href="#N67987">Game window</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">11 s</td><td class="realtime">11 s</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="padding-left-16" style="padding-left:16px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                                </div>
+                                <div class="item">
+                                    <a href="#N68742">Game round</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">14 s</td><td class="realtime">14 s</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="padding-left-16" style="padding-left:16px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                                </div>
+                                <div class="item">
+                                    <a href="#N69086">Game end</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">14 s</td><td class="realtime">14 s</td>
+                </tr>
+            </table>
+        </div>
+        <div class="allerrors branch">
+            <nav class="allerrorslinks overviewlinks gutter-left">
+                <a name="allerrors"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a>
+            </nav>
+            <h2 class="allerrorstitle gutter-left">Overview: Errors</h2>
+            <table class="allerrorslist" cellspacing="0">
+                <tr class="headers">
+                    <th class="margin"></th><th class="testcase">Test case</th><th class="message">Message</th><th class="screenshot">Screenshot</th>
+                </tr>
+                <tr>
+                    <td class="marginicon"><a name="N67789"></a><img width="16" height="16" src="icons/error.png" alt="Error" title="Error"></td><td class="testcase">
+                        <div class="possibleScroll">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                                </div>
+                                <div class="item">
+                                    <a href="#N67436">Settings window</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td><td class="message">
+                        <div class="possibleScroll">Mismatch
+Expected: 'Rounds: 10'
+Got: 'Rounds : 10'.</div>
+                    </td><td class="screenshot"><a href="images/240520231118_report_ss0.png">Screenshot of screen 1</a>
+                        <br>
+                        <a href="images/240520231118_report_ss1.png">Screenshot Settings [Main ]</a>
+                        <br>
+                        <a href="images/240520231118_report_ss2.png">Screenshot Start Menu [Main ]</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="details">
+            <nav class="detailslinks overviewlinks gutter-left">
+                <a name="details"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a>
+            </nav>
+            <h2 class="detailstitle gutter-left">Details</h2>
+        </div>
+        <div class="testset branch" name="Application">
+            <nav class="testsetlinks branchlinks gutter-left">
+                <a name="N66838"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a>
+                <div class="links">
+                    <img width="17" height="18" src="icons/linkprevdis.png"><a href="#N66898"><img width="17" height="18" src="icons/linkcont.png" title="Test case: Start window"></a><img width="17" height="18" src="icons/linknextdis.png"><img width="17" height="18" src="icons/linkupdis.png">
+                </div>
+            </nav>
+            <h3 class="testsettitle branchtitle gutter-left">
+                <div class="marginicon">
+                    <img width="16" height="16" src="icons/error.png" alt="Error" title="Error">
+                </div>
+                Test-set: "Application"
+            </h3>
+            <div class="testsetdesc branchdesc gutter-left"></div>
+            <div class="testsetresult gutter-left">Result: 1 error</div>
+            <table cellspacing="0" class="testsetlist">
+                <tr class="headers">
+                    <th class="margin"></th><th class="testcase">Test case</th><th class="desc">Description</th><th class="result">Result</th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">
+                                <a href="#N66898">Start window</a>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">982 ms</td><td class="realtime">982 ms</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">
+                                <a href="#N67239">Story window</a>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">599 ms</td><td class="realtime">599 ms</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/error.png" alt="Error" title="Error"></td><td class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">
+                                <a href="#N67436">Settings window</a>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">1 error</td><td class="duration">2 s</td><td class="realtime">3 s</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">
+                                <a href="#N67987">Game window</a>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">11 s</td><td class="realtime">11 s</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">
+                                <a href="#N68742">Game round</a>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">14 s</td><td class="realtime">14 s</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed"></td><td class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">
+                                <a href="#N69086">Game end</a>
+                            </div>
+                        </div>
+                    </td><td class="desc">&nbsp;</td><td class="result">Passed</td><td class="duration">14 s</td><td class="realtime">14 s</td>
+                </tr>
+            </table>
+        </div>
+        <div class="testcase leaf" name="Application.Start window">
+            <nav class="testcaselinks leaflinks gutter-left">
+                <a name="N66898"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a><a class="nav-link" href="#N66838">Application</a>
+                <div class="links">
+                    <img width="17" height="18" src="icons/linkprevdis.png"><a href="#N67239"><img width="17" height="18" src="icons/linkcont.png" title="Test case: Story window"></a><a href="#N67239"><img width="17" height="18" src="icons/linknext.png" title="Test case: Story window"></a><a href="#N66838"><img width="17" height="18" src="icons/linkup.png" title="Test-set: Application"></a>
+                </div>
+            </nav>
+            <h4 class="testcasetitle leaftitle gutter-left">
+                <div class="marginicon">
+                    <img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed">
+                </div>
+                Test case: "Start window"
+            </h4>
+            <div class="testcasedesc leafdesc gutter-left"></div>
+            <div class="testcaseresult gutter-left">Result: Passed</div>
+            <table class="testcasedetailslist" cellspacing="0">
+                <tr>
+                    <th class="margin"></th><th colspan="2" class="teststep">Test-step/Message</th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td colspan="2" class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">Start window</div>
+                        </div>
+                    </td><td class="duration">982 ms</td><td class="realtime">982 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check texts</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">401 ms</td><td class="realtime">401 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check images</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">558 ms</td><td class="realtime">558 ms</td>
+                </tr>
+            </table>
+        </div>
+        <div class="testcase leaf" name="Application.Story window">
+            <nav class="testcaselinks leaflinks gutter-left">
+                <a name="N67239"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a><a class="nav-link" href="#N66838">Application</a>
+                <div class="links">
+                    <a href="#N66898"><img width="17" height="18" src="icons/linkprev.png" title="Test case: Start window"></a><a href="#N67436"><img width="17" height="18" src="icons/linkcont.png" title="Test case: Settings window"></a><a href="#N67436"><img width="17" height="18" src="icons/linknext.png" title="Test case: Settings window"></a><a href="#N66838"><img width="17" height="18" src="icons/linkup.png" title="Test-set: Application"></a>
+                </div>
+            </nav>
+            <h4 class="testcasetitle leaftitle gutter-left">
+                <div class="marginicon">
+                    <img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed">
+                </div>
+                Test case: "Story window"
+            </h4>
+            <div class="testcasedesc leafdesc gutter-left"></div>
+            <div class="testcaseresult gutter-left">Result: Passed</div>
+            <table class="testcasedetailslist" cellspacing="0">
+                <tr>
+                    <th class="margin"></th><th colspan="2" class="teststep">Test-step/Message</th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td colspan="2" class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">Story window</div>
+                        </div>
+                    </td><td class="duration">599 ms</td><td class="realtime">599 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check button</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">422 ms</td><td class="realtime">422 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check texts</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">155 ms</td><td class="realtime">155 ms</td>
+                </tr>
+            </table>
+        </div>
+        <div class="testcase leaf" name="Application.Settings window">
+            <nav class="testcaselinks leaflinks gutter-left">
+                <a name="N67436"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a><a class="nav-link" href="#N66838">Application</a>
+                <div class="links">
+                    <a href="#N67239"><img width="17" height="18" src="icons/linkprev.png" title="Test case: Story window"></a><a href="#N67987"><img width="17" height="18" src="icons/linkcont.png" title="Test case: Game window"></a><a href="#N67987"><img width="17" height="18" src="icons/linknext.png" title="Test case: Game window"></a><a href="#N66838"><img width="17" height="18" src="icons/linkup.png" title="Test-set: Application"></a>
+                </div>
+            </nav>
+            <h4 class="testcasetitle leaftitle gutter-left">
+                <div class="marginicon">
+                    <img width="16" height="16" src="icons/error.png" alt="Error" title="Error">
+                </div>
+                Test case: "Settings window"
+            </h4>
+            <div class="testcasedesc leafdesc gutter-left"></div>
+            <div class="testcaseresult gutter-left">Result: 1 error</div>
+            <table class="testcasedetailslist" cellspacing="0">
+                <tr>
+                    <th class="margin"></th><th colspan="2" class="teststep">Test-step/Message</th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td colspan="2" class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">Settings window</div>
+                        </div>
+                    </td><td class="duration">2 s</td><td class="realtime">3 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check button</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">524 ms</td><td class="realtime">524 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check texts</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">204 ms</td><td class="realtime">204 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check images</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">215 ms</td><td class="realtime">215 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check set</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">1 s</td><td class="realtime">2 s</td>
+                </tr>
+                <tr>
+                    <td class="marginicon"><img width="16" height="16" src="icons/error.png" alt="Error" title="Error"></td><td class="message">
+                        <div class="step padding-left-40" style="padding-left:40px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/msg_err.png" alt="Message" title="Message">
+                                </div>
+                                <div class="item">Mismatch
+Expected: 'Rounds: 10'
+Got: 'Rounds : 10'.</div>
+                            </div>
+                        </div>
+                    </td><td colspan="3" class="screenshot">&nbsp;<a href="images/240520231118_report_ss0.png">Screenshot of screen 1</a>
+                        <br>
+                        <a href="images/240520231118_report_ss1.png">Screenshot Settings [Main ]</a>
+                        <br>
+                        <a href="images/240520231118_report_ss2.png">Screenshot Start Menu [Main ]</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="testcase leaf" name="Application.Game window">
+            <nav class="testcaselinks leaflinks gutter-left">
+                <a name="N67987"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a><a class="nav-link" href="#N66838">Application</a>
+                <div class="links">
+                    <a href="#N67436"><img width="17" height="18" src="icons/linkprev.png" title="Test case: Settings window"></a><a href="#N68742"><img width="17" height="18" src="icons/linkcont.png" title="Test case: Game round"></a><a href="#N68742"><img width="17" height="18" src="icons/linknext.png" title="Test case: Game round"></a><a href="#N66838"><img width="17" height="18" src="icons/linkup.png" title="Test-set: Application"></a>
+                </div>
+            </nav>
+            <h4 class="testcasetitle leaftitle gutter-left">
+                <div class="marginicon">
+                    <img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed">
+                </div>
+                Test case: "Game window"
+            </h4>
+            <div class="testcasedesc leafdesc gutter-left"></div>
+            <div class="testcaseresult gutter-left">Result: Passed</div>
+            <table class="testcasedetailslist" cellspacing="0">
+                <tr>
+                    <th class="margin"></th><th colspan="2" class="teststep">Test-step/Message</th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td colspan="2" class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">Game window</div>
+                        </div>
+                    </td><td class="duration">11 s</td><td class="realtime">11 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Set rounds</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">1 s</td><td class="realtime">1 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check button</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">75 ms</td><td class="realtime">75 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check texts</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">687 ms</td><td class="realtime">687 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">First player</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">4 s</td><td class="realtime">4 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Second and third player</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">3 s</td><td class="realtime">3 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Fourth player</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">2 s</td><td class="realtime">2 s</td>
+                </tr>
+            </table>
+        </div>
+        <div class="testcase leaf" name="Application.Game round">
+            <nav class="testcaselinks leaflinks gutter-left">
+                <a name="N68742"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a><a class="nav-link" href="#N66838">Application</a>
+                <div class="links">
+                    <a href="#N67987"><img width="17" height="18" src="icons/linkprev.png" title="Test case: Game window"></a><a href="#N69086"><img width="17" height="18" src="icons/linkcont.png" title="Test case: Game end"></a><a href="#N69086"><img width="17" height="18" src="icons/linknext.png" title="Test case: Game end"></a><a href="#N66838"><img width="17" height="18" src="icons/linkup.png" title="Test-set: Application"></a>
+                </div>
+            </nav>
+            <h4 class="testcasetitle leaftitle gutter-left">
+                <div class="marginicon">
+                    <img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed">
+                </div>
+                Test case: "Game round"
+            </h4>
+            <div class="testcasedesc leafdesc gutter-left"></div>
+            <div class="testcaseresult gutter-left">Result: Passed</div>
+            <table class="testcasedetailslist" cellspacing="0">
+                <tr>
+                    <th class="margin"></th><th colspan="2" class="teststep">Test-step/Message</th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td colspan="2" class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">Game round</div>
+                        </div>
+                    </td><td class="duration">14 s</td><td class="realtime">14 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Set rounds</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">929 ms</td><td class="realtime">929 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check button</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">82 ms</td><td class="realtime">82 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check texts</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">431 ms</td><td class="realtime">431 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Round</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">12 s</td><td class="realtime">12 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check texts</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">36 ms</td><td class="realtime">36 ms</td>
+                </tr>
+            </table>
+        </div>
+        <div class="testcase leaf" name="Application.Game end">
+            <nav class="testcaselinks leaflinks gutter-left">
+                <a name="N69086"></a><a class="nav-link test-suite-link" href="report.html">Summary</a><a class="nav-link test-suite-link" href="#">iet-hf</a><a class="nav-link" href="#N66838">Application</a>
+                <div class="links">
+                    <a href="#N68742"><img width="17" height="18" src="icons/linkprev.png" title="Test case: Game round"></a><img width="17" height="18" src="icons/linkcontdis.png"><img width="17" height="18" src="icons/linknextdis.png"><a href="#N66838"><img width="17" height="18" src="icons/linkup.png" title="Test-set: Application"></a>
+                </div>
+            </nav>
+            <h4 class="testcasetitle leaftitle gutter-left">
+                <div class="marginicon">
+                    <img width="16" height="16" src="icons/ok.png" alt="Passed" title="Passed">
+                </div>
+                Test case: "Game end"
+            </h4>
+            <div class="testcasedesc leafdesc gutter-left"></div>
+            <div class="testcaseresult gutter-left">Result: Passed</div>
+            <table class="testcasedetailslist" cellspacing="0">
+                <tr>
+                    <th class="margin"></th><th colspan="2" class="teststep">Test-step/Message</th><th class="duration"><img width="16" height="16" src="icons/duration.png" alt="Time spent in tests" title="Time spent in tests"></th><th class="realtime"><img width="16" height="16" src="icons/realtime.png" alt="Elapsed realtime" title="Elapsed realtime"></th>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td colspan="2" class="testcase">
+                        <div class="withicon">
+                            <div class="icon">
+                                <img width="16" height="16" class="icon" src="icons/testcase.png" alt="Test case" title="Test case">
+                            </div>
+                            <div class="item">Game end</div>
+                        </div>
+                    </td><td class="duration">14 s</td><td class="realtime">14 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Set rounds</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">971 ms</td><td class="realtime">971 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check button</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">55 ms</td><td class="realtime">55 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Round</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">13 s</td><td class="realtime">13 s</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Check texts</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">105 ms</td><td class="realtime">105 ms</td>
+                </tr>
+                <tr>
+                    <td class="margin"></td><td class="teststep">
+                        <div class="step padding-left-20" style="padding-left:20px">
+                            <div class="withicon">
+                                <div class="icon">
+                                    <img width="16" height="16" class="icon" src="icons/teststep.png" alt="Test-step" title="Test-step">
+                                </div>
+                                <div class="item">Quit</div>
+                            </div>
+                        </div>
+                    </td><td class="buffer"></td><td class="duration">621 ms</td><td class="realtime">621 ms</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="createdcopy">Created: 2024-05-20 23:12:50</div>
+        </footer>
+    </body>
+</html>
