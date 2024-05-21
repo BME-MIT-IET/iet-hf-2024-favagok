@@ -13,6 +13,8 @@ public class Pipe extends Field {
     int x2;
     int y2;
 
+    String nif = "Nincs ilyen függvénye: ";
+
     /**
      * Megadja, hogy a csőben van-e víz.
      */
@@ -233,7 +235,7 @@ public class Pipe extends Field {
      */
     @Override
     public void setNewPump(Pump p) {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.setNewPump()");
+        throw new UnsupportedOperationException(nif + "Pipe.setNewPump()");
     }
 
     /**
@@ -243,7 +245,7 @@ public class Pipe extends Field {
      */
     @Override
     public boolean getNewPump() {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye" + "Pipe.getNewPump()");
+        throw new UnsupportedOperationException(nif + "Pipe.getNewPump()");
     }
 
     /**
@@ -290,7 +292,7 @@ public class Pipe extends Field {
     @Override
     public ArrayList<Pump> listNeighbours() {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.listNeighbours()");
+        throw new UnsupportedOperationException(nif + "Pipe.listNeighbours()");
 
     }
 
@@ -302,7 +304,7 @@ public class Pipe extends Field {
     @Override
     public void removePipe(Pipe p) {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.removePipe()");
+        throw new UnsupportedOperationException(nif + "Pipe.removePipe()");
     }
 
     /**
@@ -312,7 +314,7 @@ public class Pipe extends Field {
      */
     @Override
     public void connectPipe(Pipe p) {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.connectPipe()");
+        throw new UnsupportedOperationException(nif + "Pipe.connectPipe()");
 
     }
 
@@ -324,7 +326,7 @@ public class Pipe extends Field {
     @Override
     public void changePipeIn(Pipe p) {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.changePipeIn()");
+        throw new UnsupportedOperationException(nif + "Pipe.changePipeIn()");
 
     }
 
@@ -335,7 +337,7 @@ public class Pipe extends Field {
      */
     @Override
     public void changePipeOut(Pipe p) {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.changePipeOut()");
+        throw new UnsupportedOperationException(nif + "Pipe.changePipeOut()");
 
     }
 
@@ -347,7 +349,7 @@ public class Pipe extends Field {
     @Override
     public void setNewPipe(Pipe p) {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.setNewPipe()");
+        throw new UnsupportedOperationException(nif + "Pipe.setNewPipe()");
     }
 
     /**
@@ -358,7 +360,7 @@ public class Pipe extends Field {
     @Override
     public Pipe getNewPipe() {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getNewPipe()");
+        throw new UnsupportedOperationException(nif + "Pipe.getNewPipe()");
 
     }
 
@@ -368,7 +370,7 @@ public class Pipe extends Field {
     @Override
     public int SpareWater() {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.SpareWater()");
+        throw new UnsupportedOperationException(nif + "Pipe.SpareWater()");
 
     }
 
@@ -392,7 +394,7 @@ public class Pipe extends Field {
      */
     public ArrayList<Pipe> getConnectedPipes() {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getConnectedPipes()");
+        throw new UnsupportedOperationException(nif + "Pipe.getConnectedPipes()");
     }
 
     /**
@@ -516,23 +518,23 @@ public class Pipe extends Field {
 
     public void removeNeighour(Pump p) {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.removeNeighour()");
+        throw new UnsupportedOperationException(nif + "Pipe.removeNeighour()");
     }
 
     public void addNeighour(Pump p) {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.addNeighour()");
+        throw new UnsupportedOperationException(nif + "Pipe.addNeighour()");
     }
 
     public void addWater() {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.addWater()");
+        throw new UnsupportedOperationException(nif + "Pipe.addWater()");
     }
 
     public Pipe getPipeIn() {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getPipeIn()");
+        throw new UnsupportedOperationException(nif + "Pipe.getPipeIn()");
     }
 
     public Pipe getPipeOut() {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getPipeOut()");
+        throw new UnsupportedOperationException(nif + "Pipe.getPipeOut()");
     }
 
     /**
