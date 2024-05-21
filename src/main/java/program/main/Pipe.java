@@ -1,22 +1,19 @@
 package program.main;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
-import java.time.LocalDateTime;
 import java.util.Random;
 
 import static program.main.Main.game;
 
-public class Pipe extends Field implements Serializable {
+public class Pipe extends Field {
 
     int x1;
     int y1;
     int x2;
     int y2;
+
+    String nif = "Nincs ilyen függvénye: ";
 
     /**
      * Megadja, hogy a csőben van-e víz.
@@ -26,7 +23,7 @@ public class Pipe extends Field implements Serializable {
     /**
      * A csőhöz csatlakoztatott pumpák tömbje.
      */
-    private Pump connectedPumps[] = new Pump[2];
+    private Pump[] connectedPumps = new Pump[2];
 
     /**
      * Megadja, hogy hány körig nem lehet még kilyukasztani a csövet.
@@ -182,7 +179,6 @@ public class Pipe extends Field implements Serializable {
             this.connectedPumps[1].removePipe(this);
             this.connectedPumps[1] = null;
         }
-        //System.out.println("SUCCESS - Pump.Detach()");
     }
 
     /**
@@ -212,16 +208,11 @@ public class Pipe extends Field implements Serializable {
      * @return
      */
     public boolean flowThru() {
-        if (this.connectedPumps[0].getPipeIn() == this && this.connectedPumps[1].getPipeOut() == this) {
-            //System.out.println("SUCCESS - Pump.flowThru()");
-            return true;
-        }
-        if (this.connectedPumps[1].getPipeIn() == this && this.connectedPumps[0].getPipeOut() == this) {
-            //System.out.println("SUCCESS - Pump.flowThru()");
-            return true;
-        }
-        //System.out.println("SUCCESS - Pump.flowThru()");
-        return false;
+        return (this.connectedPumps[0].getPipeIn() == this && this.connectedPumps[1].getPipeOut() == this
+            ||
+            this.connectedPumps[1].getPipeIn() == this && this.connectedPumps[0].getPipeOut() == this
+            );
+    
     }
 
     /**
@@ -231,13 +222,9 @@ public class Pipe extends Field implements Serializable {
      * @return
      */
     public Pump otherEnd(Pump p) {
-        //Pump temp = connectedPumps[0];
-        //System.out.println(this.connectedPumps[0]);
-        //System.out.println(this.connectedPumps[1]);
         if (connectedPumps[0] != p) {
             return connectedPumps[0];
         }
-        //System.out.println("SUCCESS - Pump.otherEnd()");
         return connectedPumps[1];
     }
 
@@ -248,7 +235,7 @@ public class Pipe extends Field implements Serializable {
      */
     @Override
     public void setNewPump(Pump p) {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.setNewPump()");
+        throw new UnsupportedOperationException(nif + "Pipe.setNewPump()");
     }
 
     /**
@@ -258,7 +245,7 @@ public class Pipe extends Field implements Serializable {
      */
     @Override
     public boolean getNewPump() {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye" + "Pipe.getNewPump()");
+        throw new UnsupportedOperationException(nif + "Pipe.getNewPump()");
     }
 
     /**
@@ -297,7 +284,6 @@ public class Pipe extends Field implements Serializable {
             this.setWater(false);
             Controller.addPointsToNomad();
         }
-        //System.out.println("SUCCESS - Pump.turn()");
     }
 
     /**
@@ -306,7 +292,7 @@ public class Pipe extends Field implements Serializable {
     @Override
     public ArrayList<Pump> listNeighbours() {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.listNeighbours()");
+        throw new UnsupportedOperationException(nif + "Pipe.listNeighbours()");
 
     }
 
@@ -318,7 +304,7 @@ public class Pipe extends Field implements Serializable {
     @Override
     public void removePipe(Pipe p) {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.removePipe()");
+        throw new UnsupportedOperationException(nif + "Pipe.removePipe()");
     }
 
     /**
@@ -328,7 +314,7 @@ public class Pipe extends Field implements Serializable {
      */
     @Override
     public void connectPipe(Pipe p) {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.connectPipe()");
+        throw new UnsupportedOperationException(nif + "Pipe.connectPipe()");
 
     }
 
@@ -340,7 +326,7 @@ public class Pipe extends Field implements Serializable {
     @Override
     public void changePipeIn(Pipe p) {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.changePipeIn()");
+        throw new UnsupportedOperationException(nif + "Pipe.changePipeIn()");
 
     }
 
@@ -351,7 +337,7 @@ public class Pipe extends Field implements Serializable {
      */
     @Override
     public void changePipeOut(Pipe p) {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.changePipeOut()");
+        throw new UnsupportedOperationException(nif + "Pipe.changePipeOut()");
 
     }
 
@@ -363,7 +349,7 @@ public class Pipe extends Field implements Serializable {
     @Override
     public void setNewPipe(Pipe p) {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.setNewPipe()");
+        throw new UnsupportedOperationException(nif + "Pipe.setNewPipe()");
     }
 
     /**
@@ -374,7 +360,7 @@ public class Pipe extends Field implements Serializable {
     @Override
     public Pipe getNewPipe() {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getNewPipe()");
+        throw new UnsupportedOperationException(nif + "Pipe.getNewPipe()");
 
     }
 
@@ -384,7 +370,7 @@ public class Pipe extends Field implements Serializable {
     @Override
     public int SpareWater() {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.SpareWater()");
+        throw new UnsupportedOperationException(nif + "Pipe.SpareWater()");
 
     }
 
@@ -398,7 +384,6 @@ public class Pipe extends Field implements Serializable {
         ArrayList<Pump> lista = new ArrayList<Pump>();
         lista.add(this.connectedPumps[0]);
         lista.add(this.connectedPumps[1]);
-        //System.out.println("SUCCESS - Pump.getConnectedPumps()");
         return lista;
     }
 
@@ -409,7 +394,7 @@ public class Pipe extends Field implements Serializable {
      */
     public ArrayList<Pipe> getConnectedPipes() {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getConnectedPipes()");
+        throw new UnsupportedOperationException(nif + "Pipe.getConnectedPipes()");
     }
 
     /**
@@ -419,7 +404,6 @@ public class Pipe extends Field implements Serializable {
      */
     public void SetTurnNotToSlippery(int i) {
         turnsToNotSlippery = i;
-        //System.out.println("SUCCESS - Pump.SetTurnNotToSlippery()");
     }
 
     /**
@@ -429,10 +413,8 @@ public class Pipe extends Field implements Serializable {
      */
     public boolean GetSlippery() {
         if (turnsToNotSlippery > 0) {
-            //System.out.println("SUCCESS - Pump.GetSlippery()");
             return true;
         }
-        //System.out.println("SUCCESS - Pump.GetSlippery()");
         return false;
     }
 
@@ -442,7 +424,6 @@ public class Pipe extends Field implements Serializable {
      * @return
      */
     public int getTurnToNotSticky() {
-        //System.out.println("SUCCESS - Pump.getTurnToNotSticky()");
         return turnToNotSticky;
     }
 
@@ -452,7 +433,6 @@ public class Pipe extends Field implements Serializable {
      * @return
      */
     public int getTurnsToNotSlippery() {
-        //System.out.println("SUCCESS - Pump.getTurnsToNotSlippery()");
         return turnsToNotSlippery;
     }
 
@@ -474,7 +454,6 @@ public class Pipe extends Field implements Serializable {
      * @param i
      */
     public void setTurnToNotSticky(int i) {
-        //System.out.println("SUCCESS - Pump.setTurnToNotSticky");
         turnToNotSticky = i;
     }
 
@@ -487,10 +466,8 @@ public class Pipe extends Field implements Serializable {
         Random random = new Random();
         int randomNumber = random.nextInt(2);
         if (randomNumber == 1) {
-            //System.out.println("SUCCESS - Pump.canPlayerStep()");
             return true;
         } else {
-            //System.out.println("SUCCESS - Pump.canPlayerStep()");
             return false;
         }
     }
@@ -501,7 +478,6 @@ public class Pipe extends Field implements Serializable {
     public void destroy() {
         if (this.getState() == State.Working) {
             if (turntoDestroy == 0) {
-                //System.out.println("SUCCESS - Pump.destroy()");
                 this.setState(State.Broken);
             }
         }
@@ -518,7 +494,6 @@ public class Pipe extends Field implements Serializable {
             int randomNumber = random.nextInt(4);
             randomNumber = randomNumber + 2;
             turntoDestroy = randomNumber;
-            //System.out.println("SUCCESS - Pump.repair()");
         }
     }
 
@@ -528,7 +503,6 @@ public class Pipe extends Field implements Serializable {
      * @return
      */
     public boolean getWater() {
-        //System.out.println("SUCCESS - Pump.getWater()");
         return water;
     }
 
@@ -538,30 +512,29 @@ public class Pipe extends Field implements Serializable {
      * @param state
      */
     public void setWater(boolean state) {
-        //System.out.println("SUCCESS - Pump.setWater()");
         water = state;
     }
 
 
     public void removeNeighour(Pump p) {
 
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.removeNeighour()");
+        throw new UnsupportedOperationException(nif + "Pipe.removeNeighour()");
     }
 
     public void addNeighour(Pump p) {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.addNeighour()");
+        throw new UnsupportedOperationException(nif + "Pipe.addNeighour()");
     }
 
     public void addWater() {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.addWater()");
+        throw new UnsupportedOperationException(nif + "Pipe.addWater()");
     }
 
     public Pipe getPipeIn() {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getPipeIn()");
+        throw new UnsupportedOperationException(nif + "Pipe.getPipeIn()");
     }
 
     public Pipe getPipeOut() {
-        throw new UnsupportedOperationException("Nincs ilyen függvénye: " + "Pipe.getPipeOut()");
+        throw new UnsupportedOperationException(nif + "Pipe.getPipeOut()");
     }
 
     /**
