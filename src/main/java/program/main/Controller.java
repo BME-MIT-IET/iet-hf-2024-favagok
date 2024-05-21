@@ -1,14 +1,16 @@
 package program.main;
 
 import java.util.Random;
-import static program.main.Main.game;
-import static program.main.State.Working;
-import static program.main.State.Broken;
+
 
 public class Controller {
     /**
      * attributumok
      */
+    private static Game game = Main.game;
+    private static State Working = State.Working;
+    private static State Broken = State.Broken;
+
 
     private static int coolDown;
 
