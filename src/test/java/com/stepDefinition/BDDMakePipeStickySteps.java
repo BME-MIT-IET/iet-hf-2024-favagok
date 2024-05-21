@@ -3,25 +3,25 @@ package com.stepDefinition;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import program.main.PlumberPipeInteraction;
-import program.main.State;
-
-import java.awt.event.ActionEvent;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static program.main.Main.game;
 
-public class UIRepairBrokenPipeSteps {
+import java.awt.event.ActionEvent;
+
+public class BDDMakePipeStickySteps {
+
     private PlumberPipeInteraction ppInteraction = new PlumberPipeInteraction();
-    @When("click on repair pipe")
-    public void click_on_repair_pipe() {
+    @When("click on make sticky")
+    public void click_on_make_sticky() {
         System.out.println("test started");
-        ActionEvent endButtonEvent = new ActionEvent(ppInteraction.getRepair(), ActionEvent.ACTION_PERFORMED, "repair");
+        ActionEvent endButtonEvent = new ActionEvent(ppInteraction.getSticky(), ActionEvent.ACTION_PERFORMED, "sticky");
         ppInteraction.actionPerformed(endButtonEvent);
     }
-    @Then("test if pipe is fixed")
-    public void test_if_pipe_is_fixed() {
+    @Then("test if pipe is sticky")
+    public void test_if_pipe_is_sticky() {
         System.out.println("test started");
-        assertEquals(game.Pipes().get(3).getState(), State.Working);
+        assertTrue(game.Pipes().get(3).GetSticky());
     }
 }

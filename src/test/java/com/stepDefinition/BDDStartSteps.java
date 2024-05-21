@@ -10,14 +10,9 @@ import program.main.*;
 import java.awt.event.ActionEvent;
 
 import static program.main.Main.game;
-import static program.main.State.Working;
-import static program.main.State.Broken;
-import static program.main.Main.game;
-import static program.main.State.Working;
-import static program.main.State.Broken;
 import static org.junit.Assert.assertEquals;
 
-public class UIStartSteps {
+public class BDDStartSteps {
     private startMenu startMenu;
     @Given("game window starts")
     public void game_window_starts() {

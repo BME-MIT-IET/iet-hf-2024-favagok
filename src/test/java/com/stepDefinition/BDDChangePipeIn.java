@@ -4,7 +4,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import program.main.PlumberButtonPanel;
 import program.main.PlumberPipeInWindow;
-import program.main.State;
 
 import java.awt.event.ActionEvent;
 
@@ -12,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static program.main.Main.game;
 
-public class UIChangePipeIn {
+public class BDDChangePipeIn {
     private PlumberButtonPanel pbPanel = new PlumberButtonPanel();
     private PlumberPipeInWindow ppWindow = new PlumberPipeInWindow(3);
     @When("click on change pipe in")

@@ -4,15 +4,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import program.main.NomadMoveWindow;
 import program.main.NomadPipeInteraction;
-import program.main.PlumberMoveWindow;
-import program.main.PlumberPipeInteraction;
 
 import java.awt.event.ActionEvent;
 
 import static org.junit.Assert.assertTrue;
 import static program.main.Main.game;
 
-public class UINomadMakesPipeSlipperySteps {
+public class BDDNomadMakesPipeSlipperySteps {
     private NomadPipeInteraction npInteraction = new NomadPipeInteraction();
     private NomadMoveWindow nmWindow = new NomadMoveWindow(3);
 
