@@ -15,6 +15,10 @@ Az alkalmazásban különböző teszteseteket és inputokat lehet definiálni.
 Az alkalmazást és a teszteket Linux operációs rendszeren futtattam. 
 Ennek következtében elképzelhetőek különböző design eltérések más OS-ek esetében. Ennek következtében eléképzelhető, hogy a tesztek egy része eltérő eredményt ad.
 
+### Maven
+A tesztelést implementáltam maven-ben is, de mivel a program elérési útját is meg kell adni, illetve az alkalmazás operációsrendszer függő is, 
+ezért jelenleg kikommenteltem, hogy ne legyen útban.
+
 ### Tesztek
 Hat fő tesztcsoportot hoztam létre, az elsők egyszerűbbek, a vége felé vannak komplexebbek is:
 * *Start window*: A kezdőablakot teszteli, a megjelenő képet, illetve a szövegeket.
