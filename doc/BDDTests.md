@@ -32,11 +32,9 @@ A tesztek mindegyike sikeresen lefut és nem jelez hibát. Ez arra utal, hogy ko
 * src
     * test
         * java
-            * com.stepDefinition 
-              itt vannak a konkrét függvények
+            * com.stepDefinition - itt vannak a konkrét függvények
 
 * src
     * test
         * resources
-            * Features
-              itt vannak a tesztek
+            * Features - itt vannak a tesztek
