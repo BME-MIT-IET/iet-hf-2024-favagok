@@ -2,7 +2,6 @@ package com.stepDefinition;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import program.main.PlumberButtonPanel;
 import program.main.PlumberPipeInteraction;
 import program.main.State;
 
@@ -11,7 +10,7 @@ import java.awt.event.ActionEvent;
 import static org.junit.Assert.assertEquals;
 import static program.main.Main.game;
 
-public class UIDestroyPipeSteps {
+public class BDDDestroyPipeSteps {
 
 
     private PlumberPipeInteraction ppInteraction = new PlumberPipeInteraction();
